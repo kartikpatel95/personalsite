@@ -9,10 +9,16 @@
 	<% include HeaderTags %>
 </head>
 <body>
+<header>
+	<% include Header %>
+</header>
 <div class="main">
 	<div class="typography">
 		$Layout
 	</div>
 </div>
+<footer>
+	<% include Footer %>
+</footer>
 </body>
 </html>
