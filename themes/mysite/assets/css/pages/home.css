@@ -1,0 +1,53 @@
+.typography {
+    height: 100%;
+}
+
+.homepage-wrapper {
+    background-image: url("../../img/architecture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    max-height: 100%;
+}
+
+.home-user-details {
+    background: #f1f1f1;
+    padding: 50px;
+}
+
+.heading {
+    letter-spacing: 0.05em;
+    color: #182153;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.user {
+    letter-spacing: 0.05em;
+    color: #182153;
+    font-size: 25px;
+}
+
+.details {
+    font-weight: 100;
+    letter-spacing: 0.05em;
+}
+
+.social-icons {
+    background-color: rgba(24, 33, 83, 0.7);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons i {
+    color: #fff;
+    font-size: 25px;
+}
+
+.social-icons i:hover {
+    color: orangered;
+}

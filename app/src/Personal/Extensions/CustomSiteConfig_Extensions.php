@@ -8,6 +8,7 @@
 
 namespace Personal {
 
+    use SilverStripe\Assets\Image;
     use SilverStripe\Forms\DateField;
     use SilverStripe\Forms\EmailField;
     use SilverStripe\Forms\FieldList;
@@ -34,6 +35,14 @@ namespace Personal {
             'Email' => 'Varchar(256)',
             'Address' => 'Text',
             'DateOfBirth' => 'Date'
+        ];
+
+        private static $has_one = [
+            'Profile' => Image::class
+        ];
+
+        private static $owns = [
+            'Profile'
         ];
 
         private static $has_many = [
