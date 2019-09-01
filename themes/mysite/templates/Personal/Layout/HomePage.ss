@@ -1,7 +1,10 @@
 <div class="homepage-wrapper">
-    <div class="container h-100 d-flex align-items-center">
+    <div class="container h-100 d-flex align-items-center justify-content-center">
         <div class="row w-100">
-            <div class="col-md-6">
+            <div class="col-md-6 my-3 my-md-0 px-0 d-flex justify-content-center align-items-center profile-image"
+            style="background-image: url($SiteConfig.Profile.Link);
+                    background-position: $SiteConfig.Profile.PercentageX% $SiteConfig.Profile.PercentageY%;
+                    ">
             </div>
             <div class="col-md-6 home-user-details">
                 <% with $SiteConfig %>
@@ -52,7 +55,7 @@
 
             <% with $SiteConfig %>
                 <% if $Social %>
-                    <div class="col-md-12 social-icons">
+                    <div class="col-md-12 social-icons mb-4 mb-md-0">
                         <% loop $Social %>
                             <% if $Icon %>
                                 <a href="$Social.LinkURL" {$Social.TargetAttr}><i class="$Icon"></i></a>

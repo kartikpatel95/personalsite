@@ -8,6 +8,7 @@
 
 namespace Personal {
 
+    use SilverStripe\AssetAdmin\Forms\UploadField;
     use SilverStripe\Assets\Image;
     use SilverStripe\Forms\DateField;
     use SilverStripe\Forms\EmailField;
@@ -58,6 +59,10 @@ namespace Personal {
                 TextareaField::create('Address', 'Physical Address'),
                 DateField::create('DateOfBirth', 'Date of Birth')
             ]);
+
+            $fields->addFieldToTab('Root.Main', $profile = UploadField::create('Profile'));
+            $profile->setFolderName('ProfileImage');
+            $profile->getValidator()->setAllowedExtensions(['png', 'jpeg', 'jpg', 'gif']);
 
             $fields->addFieldToTab('Root.SocialIcons', $this->getSocialGridIcons());
         }

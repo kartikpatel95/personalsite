@@ -14,7 +14,13 @@
 
 .home-user-details {
     background: #f1f1f1;
-    padding: 50px;
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px){
+    .home-user-details {
+        padding: 50px;
+    }
 }
 
 .heading {
@@ -50,4 +56,22 @@
 
 .social-icons i:hover {
     color: orangered;
+}
+
+.profile-image {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 300px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+@media screen and (min-width: 768px){
+    .profile-image {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
 }

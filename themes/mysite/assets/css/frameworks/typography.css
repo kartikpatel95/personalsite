@@ -9,6 +9,11 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+img {
+    height: auto;
+    width: 100%;
+}
+
 body a {
     text-decoration: none;
 }
