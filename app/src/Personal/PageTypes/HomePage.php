@@ -15,5 +15,8 @@ namespace Personal {
      */
     class HomePage extends Page {
         private static $table_name = "HomePage";
+        private static $description = "Used only for homepage";
+        private static $icon_class = "font-icon-home";
+
     }
 }

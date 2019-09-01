@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3ad1db8335ae2380cb50fd7b4b46b4c1",
+    "content-hash": "e43d512d7fe4d8637f75503d1187884f",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -318,6 +318,210 @@
                 "twitter cards"
             ],
             "time": "2019-07-20T17:05:41+00:00"
+        },
+        {
+            "name": "giggsey/libphonenumber-for-php",
+            "version": "8.10.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/libphonenumber-for-php.git",
+                "reference": "528e45db57b3dfa3d89965e52b635c50b285d584"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/528e45db57b3dfa3d89965e52b635c50b285d584",
+                "reference": "528e45db57b3dfa3d89965e52b635c50b285d584",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "giggsey/locale": "^1.7",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "^1.0",
+                "pear/versioncontrol_git": "^0.5",
+                "phing/phing": "^2.7",
+                "php-coveralls/php-coveralls": "^1.0|^2.0",
+                "phpunit/phpunit": "^4.8.36|^5.0",
+                "symfony/console": "^2.8|^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "libphonenumber\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "/src/data/",
+                    "/src/carrier/data/",
+                    "/src/geocoding/data/",
+                    "/src/timezone/data/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "https://giggsey.com/"
+                }
+            ],
+            "description": "PHP Port of Google's libphonenumber",
+            "homepage": "https://github.com/giggsey/libphonenumber-for-php",
+            "keywords": [
+                "geocoding",
+                "geolocation",
+                "libphonenumber",
+                "mobile",
+                "phonenumber",
+                "validation"
+            ],
+            "time": "2019-08-15T09:22:06+00:00"
+        },
+        {
+            "name": "giggsey/locale",
+            "version": "1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/Locale.git",
+                "reference": "b8030fc8df13cdfbecba318588de2d52b49c9b50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/Locale/zipball/b8030fc8df13cdfbecba318588de2d52b49c9b50",
+                "reference": "b8030fc8df13cdfbecba318588de2d52b49c9b50",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "^1.0",
+                "pear/versioncontrol_git": "^0.5",
+                "phing/phing": "~2.7",
+                "phpunit/phpunit": "^4.8|^5.0",
+                "satooshi/php-coveralls": "^1.0",
+                "symfony/console": "^2.8|^3.0|^4.0",
+                "symfony/filesystem": "^2.8|^3.0|^4.0",
+                "symfony/finder": "^2.8|^3.0|^4.0",
+                "symfony/process": "^2.8|^3.0|^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Giggsey\\Locale\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "http://giggsey.com/"
+                }
+            ],
+            "description": "Locale functions required by libphonenumber-for-php",
+            "time": "2019-04-26T07:28:50+00:00"
+        },
+        {
+            "name": "gorriecoe/silverstripe-link",
+            "version": "1.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gorriecoe/silverstripe-link.git",
+                "reference": "a895f9b5124a26f2a4bf7a18784b62128c885777"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gorriecoe/silverstripe-link/zipball/a895f9b5124a26f2a4bf7a18784b62128c885777",
+                "reference": "a895f9b5124a26f2a4bf7a18784b62128c885777",
+                "shasum": ""
+            },
+            "require": {
+                "giggsey/libphonenumber-for-php": "^8.0",
+                "silverstripe/framework": "^4",
+                "unclecheese/display-logic": "^2"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "installer-name": "link"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Gorrie Coe",
+                    "email": "gorriecoe@gmail.com"
+                }
+            ],
+            "description": "Adds a Link Object that can be link to a URL, Email, Phone number, an internal Page or File.",
+            "homepage": "http://github.com/gorriecoe/silverstripe-link",
+            "keywords": [
+                "link",
+                "silverstripe"
+            ],
+            "time": "2018-10-25T01:00:04+00:00"
+        },
+        {
+            "name": "gorriecoe/silverstripe-linkfield",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gorriecoe/silverstripe-linkfield.git",
+                "reference": "495dd0379f9dd85f5442e13b2d868121eba52b7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gorriecoe/silverstripe-linkfield/zipball/495dd0379f9dd85f5442e13b2d868121eba52b7f",
+                "reference": "495dd0379f9dd85f5442e13b2d868121eba52b7f",
+                "shasum": ""
+            },
+            "require": {
+                "gorriecoe/silverstripe-link": "^1.0",
+                "silvershop/silverstripe-hasonefield": "3.0.1",
+                "symbiote/silverstripe-gridfieldextensions": "^3.1"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "installer-name": "linkfield",
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Gorrie Coe",
+                    "email": "gorriecoe@gmail.com"
+                }
+            ],
+            "description": "Adds a Linkfield for gorriecoe/silverstripe-link",
+            "homepage": "http://github.com/gorriecoe/silverstripe-linkfield",
+            "keywords": [
+                "cms",
+                "link",
+                "modular",
+                "silverstripe"
+            ],
+            "time": "2019-05-30T06:14:57+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -1165,51 +1369,55 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
-            "name": "silverstripe-themes/simple",
-            "version": "3.2.0",
+            "name": "silvershop/silverstripe-hasonefield",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe-themes/silverstripe-simple.git",
-                "reference": "5a6b34cd00a71047e905a8cb5d4b73713ca510c3"
+                "url": "https://github.com/silvershop/silverstripe-hasonefield.git",
+                "reference": "150d052a94cf0dabc16934d1adae2a66ae2adac3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-themes/silverstripe-simple/zipball/5a6b34cd00a71047e905a8cb5d4b73713ca510c3",
-                "reference": "5a6b34cd00a71047e905a8cb5d4b73713ca510c3",
+                "url": "https://api.github.com/repos/silvershop/silverstripe-hasonefield/zipball/150d052a94cf0dabc16934d1adae2a66ae2adac3",
+                "reference": "150d052a94cf0dabc16934d1adae2a66ae2adac3",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "*",
-                "silverstripe/framework": ">=3.5"
+                "silverstripe/framework": "^4.0",
+                "silverstripe/vendor-plugin": "^1.0"
             },
-            "type": "silverstripe-theme",
+            "replace": {
+                "hchokshi/silverstripe-hasonefield": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "silverstripe-vendormodule",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2.x-dev"
+                    "dev-master": "3.x-dev"
                 },
                 "expose": [
-                    "css",
-                    "images",
-                    "javascript",
-                    "webfonts"
+                    "client"
                 ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "SilverShop\\HasOneField\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-3-Clause"
+                "BSD-2-Clause"
             ],
             "authors": [
                 {
-                    "name": "Sara Tušar (Innovaif)",
-                    "homepage": "http://www.saratusar.com"
+                    "name": "Jeremy Shipman",
+                    "email": "jeremy@burnbright.net"
                 }
             ],
-            "description": "The SilverStripe simple theme (default SilverStripe 3 theme)",
-            "keywords": [
-                "silverstripe",
-                "theme"
-            ],
-            "time": "2018-06-25T20:55:43+00:00"
+            "description": "Edit a has_one relationship using a GridField, triggered by clicking a button.",
+            "time": "2018-12-20T02:20:42+00:00"
         },
         {
             "name": "silverstripe/admin",
@@ -2215,6 +2423,72 @@
             "time": "2018-07-31T09:26:32+00:00"
         },
         {
+            "name": "symbiote/silverstripe-gridfieldextensions",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symbiote/silverstripe-gridfieldextensions.git",
+                "reference": "56d1adf64ab790d08195cbeb23e71c37092a51da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symbiote/silverstripe-gridfieldextensions/zipball/56d1adf64ab790d08195cbeb23e71c37092a51da",
+                "reference": "56d1adf64ab790d08195cbeb23e71c37092a51da",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~4.0",
+                "silverstripe/vendor-plugin": "^1.0"
+            },
+            "replace": {
+                "ajshort/silverstripe-gridfieldextensions": "self.version",
+                "silverstripe-australia/gridfieldextensions": "self.version"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "silverstripe/versioned": "^1",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "screenshots": [
+                    "docs/en/_images/editable-rows.png",
+                    "docs/en/_images/add-existing-search.png"
+                ],
+                "expose": [
+                    "css",
+                    "javascript"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symbiote\\GridFieldExtensions\\": "src/",
+                    "Symbiote\\GridFieldExtensions\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Short",
+                    "email": "andrewjshort@gmail.com"
+                },
+                {
+                    "name": "Marcus Nyeholt",
+                    "email": "marcus@symbiote.com.au"
+                }
+            ],
+            "description": "A collection of useful grid field components",
+            "homepage": "http://github.com/symbiote/silverstripe-gridfieldextensions",
+            "keywords": [
+                "gridfield",
+                "silverstripe"
+            ],
+            "time": "2018-10-19T21:52:48+00:00"
+        },
+        {
             "name": "symfony/cache",
             "version": "v3.4.31",
             "source": {
@@ -2742,6 +3016,120 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2019-08-20T13:31:17+00:00"
+        },
+        {
+            "name": "unclecheese/display-logic",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unclecheese/silverstripe-display-logic.git",
+                "reference": "845ab12189439422b6dcd1becd20c9d5a94eb558"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-display-logic/zipball/845ab12189439422b6dcd1becd20c9d5a94eb558",
+                "reference": "845ab12189439422b6dcd1becd20c9d5a94eb558",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.0"
+            },
+            "replace": {
+                "silverstripe/display-logic": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "se/selenium-server-standalone": "2.41.0",
+                "silverstripe/behat-extension": "^3@dev",
+                "silverstripe/serve": "^2"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "installer-name": "display-logic",
+                "expose": [
+                    "client"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "UncleCheese\\DisplayLogic\\": "src/",
+                    "UncleCheese\\DisplayLogic\\Tests\\": "tests/php/",
+                    "UncleCheese\\DisplayLogic\\Tests\\Behaviour\\": "tests/behat/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Uncle Cheese",
+                    "email": "unclecheese@leftandmain.com"
+                }
+            ],
+            "description": "Allows assignment of conditions for display and hide of specific form fields based on client side behavior.",
+            "keywords": [
+                "Forms",
+                "cms",
+                "display",
+                "logic",
+                "silverstripe"
+            ],
+            "time": "2018-11-14T23:16:44+00:00"
+        },
+        {
+            "name": "undefinedoffset/sortablegridfield",
+            "version": "2.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/UndefinedOffset/SortableGridField.git",
+                "reference": "af492d02675f1222197f6d1dd1d32122fb4cc1cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/af492d02675f1222197f6d1dd1d32122fb4cc1cb",
+                "reference": "af492d02675f1222197f6d1dd1d32122fb4cc1cb",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~4.0",
+                "silverstripe/vendor-plugin": "^1.0",
+                "silverstripe/versioned": "^1.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "installer-name": "sortablegridfield",
+                "expose": [
+                    "css",
+                    "javascript"
+                ],
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "UndefinedOffset\\SortableGridField\\": "src/",
+                    "UndefinedOffset\\SortableGridField\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ed Chipman",
+                    "role": "Developer",
+                    "homepage": "http://www.edchipman.ca"
+                }
+            ],
+            "description": "Adds drag and drop functionality to SilverStripe 4.x's GridField",
+            "keywords": [
+                "gridfield",
+                "silverstripe"
+            ],
+            "time": "2019-01-08T16:23:14+00:00"
         },
         {
             "name": "webonyx/graphql-php",
@@ -4014,6 +4402,53 @@
             "time": "2016-10-03T07:35:21+00:00"
         },
         {
+            "name": "silverstripe-themes/simple",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe-themes/silverstripe-simple.git",
+                "reference": "5a6b34cd00a71047e905a8cb5d4b73713ca510c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe-themes/silverstripe-simple/zipball/5a6b34cd00a71047e905a8cb5d4b73713ca510c3",
+                "reference": "5a6b34cd00a71047e905a8cb5d4b73713ca510c3",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "silverstripe/framework": ">=3.5"
+            },
+            "type": "silverstripe-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2.x-dev"
+                },
+                "expose": [
+                    "css",
+                    "images",
+                    "javascript",
+                    "webfonts"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sara Tušar (Innovaif)",
+                    "homepage": "http://www.saratusar.com"
+                }
+            ],
+            "description": "The SilverStripe simple theme (default SilverStripe 3 theme)",
+            "keywords": [
+                "silverstripe",
+                "theme"
+            ],
+            "time": "2018-06-25T20:55:43+00:00"
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.5.0",
             "source": {
@@ -4072,7 +4507,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.6.0"
+        "php": ">=7.0.0"
     },
     "platform-dev": []
 }

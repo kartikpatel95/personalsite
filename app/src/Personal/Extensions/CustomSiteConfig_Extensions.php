@@ -11,9 +11,12 @@ namespace Personal {
     use SilverStripe\Forms\DateField;
     use SilverStripe\Forms\EmailField;
     use SilverStripe\Forms\FieldList;
+    use SilverStripe\Forms\GridField\GridField;
+    use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
     use SilverStripe\Forms\TextareaField;
     use SilverStripe\Forms\TextField;
     use SilverStripe\ORM\DataExtension;
+    use UndefinedOffset\SortableGridField\Forms\GridFieldSortableRows;
 
     /**
      * Class CustomSiteConfig_Extensions
@@ -33,6 +36,10 @@ namespace Personal {
             'DateOfBirth' => 'Date'
         ];
 
+        private static $has_many = [
+            'Social' => SocialMedia::class
+        ];
+
         public function updateCMSFields(FieldList $fields)
         {
             $fields->addFieldsToTab('Root.Main', [
@@ -42,6 +49,19 @@ namespace Personal {
                 TextareaField::create('Address', 'Physical Address'),
                 DateField::create('DateOfBirth', 'Date of Birth')
             ]);
+
+            $fields->addFieldToTab('Root.SocialIcons', $this->getSocialGridIcons());
+        }
+
+        /**
+         * @return GridField
+         */
+        public function getSocialGridIcons(){
+            $socialGrid = GridField::create(
+              'Social', 'Social', $this->getOwner()->Social(), GridFieldConfig_RecordEditor::create()
+            );
+            $socialGrid->getConfig()->addComponent(new GridFieldSortableRows('SortID'));
+            return $socialGrid;
         }
     }
 }
