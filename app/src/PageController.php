@@ -13,7 +13,9 @@ namespace {
         {
             parent::init();
             Requirements::css('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
-            Requirements::themedCSS('assets/css/typography');
+            Requirements::themedCSS('assets/css/frameworks/typography');
+            Requirements::themedCSS('assets/css/frameworks/bootstrap.min');
+            Requirements::themedCSS('assets/css/partials/footer');
         }
     }
 }
