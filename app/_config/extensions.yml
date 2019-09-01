@@ -1,0 +1,9 @@
+---
+name: myextensions
+---
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - Personal\CustomSiteConfig_Extensions
+SilverStripe\Forms\FormField:
+  extensions:
+    - Personal\DefaultFormField_Extensions
