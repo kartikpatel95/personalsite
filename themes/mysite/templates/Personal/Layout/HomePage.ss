@@ -15,7 +15,7 @@
                     <% end_if %>
                 </div>
             </div>
-            <div class="col-md-6 home-user-details">
+            <div class="col-md-6 home-user-details mb-3 mb-md-0">
                 <% with $SiteConfig %>
                     <% if $Title %>
                         <div class="user">

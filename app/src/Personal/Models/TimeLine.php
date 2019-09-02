@@ -35,7 +35,7 @@ namespace Personal {
             'EndDate' => 'Date',
             'DateLabel' => 'Varchar(64)',
             'DescriptionLabel' => 'Varchar(64)',
-            'Description' => 'Varchar(256)',
+            'Description' => 'Text',
             'SortID' => 'Int'
         ];
 
@@ -45,8 +45,8 @@ namespace Personal {
 
         private static $summary_fields = [
             'DateLabel',
-            'StartDate.Nice',
-            'EndDate.Nice',
+            'StartDate.Nice' => 'Start Date',
+            'EndDate.Nice' => 'End Date',
             'DescriptionLabel',
             'Description'
         ];
@@ -72,7 +72,7 @@ namespace Personal {
 
         public function getCMSValidator(){
             return RequiredFields::create(
-                'DateLabel', 'DescriptionLabel', 'StartDate', 'Description'
+                'StartDate', 'Description'
             );
         }
 
