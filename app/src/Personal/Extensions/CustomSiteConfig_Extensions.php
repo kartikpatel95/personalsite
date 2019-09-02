@@ -9,6 +9,7 @@
 namespace Personal {
 
     use SilverStripe\AssetAdmin\Forms\UploadField;
+    use SilverStripe\Assets\File;
     use SilverStripe\Assets\Image;
     use SilverStripe\Forms\DateField;
     use SilverStripe\Forms\EmailField;
@@ -39,11 +40,13 @@ namespace Personal {
         ];
 
         private static $has_one = [
-            'Profile' => Image::class
+            'Profile' => Image::class,
+            'CV' => File::class
         ];
 
         private static $owns = [
-            'Profile'
+            'Profile',
+            'CV'
         ];
 
         private static $has_many = [
@@ -63,6 +66,9 @@ namespace Personal {
             $fields->addFieldToTab('Root.Main', $profile = UploadField::create('Profile'));
             $profile->setFolderName('ProfileImage');
             $profile->getValidator()->setAllowedExtensions(['png', 'jpeg', 'jpg', 'gif']);
+
+            $fields->addFieldToTab('Root.Main', $cv = UploadField::create('CV'));
+            $cv->setFolderName('Documents');
 
             $fields->addFieldToTab('Root.SocialIcons', $this->getSocialGridIcons());
         }

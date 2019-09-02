@@ -13,13 +13,13 @@
 }
 
 .home-user-details {
-    background: #f1f1f1;
+    background: rgba(241, 241, 241, 0.8);
     padding: 20px;
 }
 
 @media screen and (min-width: 768px){
     .home-user-details {
-        padding: 50px;
+        padding: 50px 50px 20px 50px;
     }
 }
 
@@ -39,6 +39,7 @@
 .details {
     font-weight: 100;
     letter-spacing: 0.05em;
+    font-size: 13px;
 }
 
 .social-icons {
@@ -58,20 +59,16 @@
     color: orangered;
 }
 
-.profile-image {
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    min-height: 300px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
+
+.profile {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 190px;
 }
 
-@media screen and (min-width: 768px){
-    .profile-image {
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;
-    }
+.personal-statement {
+    background: rgba(255,255,255,0.7);
+    padding: 20px;
+    height: 100%;
 }
