@@ -5,6 +5,7 @@
 
 .nav-link {
     letter-spacing: 0.1em;
+    font-size: 14px;
 }
 
 .nav-item a.nav-link.current {

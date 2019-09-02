@@ -22,10 +22,16 @@
 
 /* Container around content */
 .timeline-container {
-    padding: 10px 40px;
+    padding: 5px 10px;
     position: relative;
     background-color: inherit;
     width: 50%;
+}
+
+@media screen and (min-width: 768px){
+    .timeline-container {
+        padding: 10px 40px;
+    }
 }
 
 /* The circles on the timeline */
@@ -61,9 +67,9 @@
     /*width: 0;*/
     /*z-index: 1;*/
     /*right: 30px;*/
-    /*border: medium solid white;*/
+    /*border: medium solid rgba(255, 255, 255, 0.6);;*/
     /*border-width: 10px 0 10px 10px;*/
-    /*border-color: transparent transparent transparent white;*/
+    /*border-color: transparent transparent transparent rgba(255, 255, 255, 0.6);*/
 /*}*/
 
 /* Add arrows to the right container (pointing left) */
@@ -75,9 +81,9 @@
     /*width: 0;*/
     /*z-index: 1;*/
     /*left: 30px;*/
-    /*border: medium solid white;*/
+    /*border: medium solid rgba(255, 255, 255, 0.6);*/
     /*border-width: 10px 10px 10px 0;*/
-    /*border-color: transparent white transparent transparent;*/
+    /*border-color: transparent rgba(255, 255, 255, 0.6) transparent transparent;*/
 /*}*/
 
 /* Fix the circle for containers on the right side */
@@ -117,7 +123,7 @@
 
     /* Make sure all circles are at the same spot */
     .left::after, .right::after {
-        left: 15px;
+        left: 9px;
     }
 
     /* Make all right containers behave like the left ones */
@@ -133,4 +139,8 @@
 .time-heading {
     font-weight: 700;
     padding-bottom: 5px;
+}
+
+.timeline-content.tile-tint {
+    background-color: rgba(255, 255, 255, 0.6);
 }

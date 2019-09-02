@@ -23,6 +23,7 @@ namespace {
             Requirements::themedCSS('assets/css/partials/footer');
             Requirements::themedCSS('assets/css/partials/header');
             Requirements::themedCSS('assets/css/partials/timeline');
+            Requirements::themedCSS('assets/css/pages/skills');
         }
     }
 }

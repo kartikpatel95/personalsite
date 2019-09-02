@@ -3,7 +3,9 @@
 }
 
 .homepage-wrapper {
-    background-image: url("../../img/architecture.jpg");
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)), url("../../img/architecture.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -68,7 +70,7 @@
 }
 
 .personal-statement {
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.65);
     padding: 20px;
     height: 100%;
 }
