@@ -8,6 +8,7 @@
 
 namespace Personal {
 
+    use SilverStripe\Dev\Debug;
     use SilverStripe\Forms\DateField;
     use SilverStripe\Forms\RequiredFields;
     use SilverStripe\Forms\TextareaField;
@@ -79,7 +80,9 @@ namespace Personal {
          * @return string
          */
         public function getDates(){
-            return ($this->EndDate) ? date('d-m-y', strtotime($this->StartDate)) . ' - ' . Date('d-m-y', strtotime($this->EndDate)) : Date('d-m-y', strtotime($this->StartDate)) . ' - Current';
+            $start = str_replace('-', '/', $this->StartDate);
+            $end = str_replace('-', '/', $this->EndDate);
+            return ($this->EndDate) ? date('d/m/y', strtotime($start)) . ' - ' . date('d/m/y', strtotime($end)) : date('d/m/y', strtotime($start)) . ' - Current';
         }
     }
 }
