@@ -2,3 +2,11 @@
     font-weight: 200;
     font-size: 25px;
 }
+
+.nav-link {
+    letter-spacing: 0.1em;
+}
+
+.nav-item a.nav-link.current {
+    color: #000;
+}

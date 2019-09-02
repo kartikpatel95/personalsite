@@ -25,6 +25,9 @@ namespace Personal {
      */
     class SocialMedia extends DataObject {
         private static $table_name = "SocialMedia";
+        private static $singular_name = "Social Media";
+        private static $plural_name = "Social Medias";
+
         private static $db = [
             'Icon' => 'Varchar(64)',
             'SortID' => 'Int'

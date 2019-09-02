@@ -23,6 +23,10 @@ body a:link {
     -webkit-tap-highlight-color: #000
 }
 
+.typography {
+    height: 100%;
+}
+
 
 /* HEADERS */
 .typography h1,

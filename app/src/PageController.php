@@ -22,6 +22,7 @@ namespace {
             Requirements::themedCSS('assets/css/frameworks/bootstrap.min');
             Requirements::themedCSS('assets/css/partials/footer');
             Requirements::themedCSS('assets/css/partials/header');
+            Requirements::themedCSS('assets/css/partials/timeline');
         }
     }
 }

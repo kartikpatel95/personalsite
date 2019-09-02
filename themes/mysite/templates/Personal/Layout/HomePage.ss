@@ -3,12 +3,16 @@
         <div class="row w-100">
             <div class="col-md-6 my-3 my-md-0 px-0">
                 <div class="personal-statement">
-                    <div class="d-flex justify-content-center">
-                        <img src="$SiteConfig.Profile.Link" class="profile">
-                    </div>
-                    <div class="pt-2">
-                        $Content
-                    </div>
+                    <% if $SiteConfig.Profile %>
+                        <div class="d-flex justify-content-center">
+                            <img src="$SiteConfig.Profile.Link" class="profile" alt="$SiteConfig.Profile.Title">
+                        </div>
+                    <% end_if %>
+                    <% if $Content %>
+                        <div class="pt-2">
+                            $Content
+                        </div>
+                    <% end_if %>
                 </div>
             </div>
             <div class="col-md-6 home-user-details">
