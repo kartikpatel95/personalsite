@@ -6,3 +6,4 @@
 /public/_resources/
 .idea/
 ss.error.log
+.DS_Store
