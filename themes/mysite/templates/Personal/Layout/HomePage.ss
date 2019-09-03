@@ -75,7 +75,7 @@
                     <div class="col-md-12 social-icons mb-4 mb-md-0">
                         <% loop $Social %>
                             <% if $Icon %>
-                                <a href="$Social.LinkURL" {$Social.TargetAttr}><i class="$Icon"></i></a>
+                                <a href="$Social.LinkURL" {$Social.TargetAttr} class="mr-3"><i class="$Icon"></i></a>
                             <% end_if %>
                         <% end_loop %>
                     </div>
