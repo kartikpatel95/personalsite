@@ -8,6 +8,7 @@
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
+    animation: fadein 4s;
 }
 
 .tiles-skills h1 {
@@ -17,6 +18,24 @@
 }
 
 .skill-title {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 200;
+}
+
+.timeline-content {
+    opacity: 0;
+}
+
+.timeline-content.loaded {
+    opacity: 1;
+    transition: all 700ms ease-in;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
