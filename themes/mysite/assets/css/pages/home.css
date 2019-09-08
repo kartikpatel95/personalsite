@@ -30,18 +30,20 @@
     color: #182153;
     margin-top: 10px;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .user {
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
     color: #182153;
-    font-size: 25px;
+    font-size: 35px;
+    font-weight: 700;
 }
 
 .details {
     font-weight: 400;
     letter-spacing: 0.05em;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .social-icons {
