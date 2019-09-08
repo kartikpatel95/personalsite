@@ -29,7 +29,7 @@
     letter-spacing: 0.05em;
     color: #182153;
     margin-top: 10px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .user {
@@ -39,9 +39,9 @@
 }
 
 .details {
-    font-weight: 100;
+    font-weight: 400;
     letter-spacing: 0.05em;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .social-icons {
@@ -54,7 +54,7 @@
 
 .social-icons i {
     color: #fff;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .social-icons i:hover {

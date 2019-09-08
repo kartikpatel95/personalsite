@@ -24,7 +24,6 @@
             "Personal\\": "app/src/Personal"
         }
     },
-
     "extra": {
         "resources-dir": "_resources",
         "project-files-installed": [
