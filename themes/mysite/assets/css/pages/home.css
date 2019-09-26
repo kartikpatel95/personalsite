@@ -65,9 +65,7 @@
 
 
 .profile {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+    border-radius: 15%;
     width: 190px;
 }
 
