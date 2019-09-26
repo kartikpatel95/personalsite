@@ -8,7 +8,7 @@
     <div class="container pt-5">
         <% if $Tiles %>
             <h1>Technical Skills</h1>
-            <div class="row mb-4">
+            <div class="row pb-4">
                 <% loop $Tiles %>
                     <% if $SkillType == "Technical" %>
                         <div class="col-md-6 col-lg-4 mb-2">
@@ -28,7 +28,7 @@
 
         <% if $Tiles %>
             <h1>Management Skills</h1>
-            <div class="row mb-4">
+            <div class="row pb-4">
                 <% loop $Tiles %>
                     <% if $SkillType == "Management" %>
                         <div class="col-md-6 col-lg-4 mb-2">
