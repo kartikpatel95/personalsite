@@ -24,6 +24,7 @@ namespace {
             Requirements::themedCSS('assets/css/partials/header');
             Requirements::themedCSS('assets/css/partials/timeline');
             Requirements::themedCSS('assets/css/pages/skills');
+            Requirements::themedCSS('assets/css/pages/login');
         }
     }
 }
