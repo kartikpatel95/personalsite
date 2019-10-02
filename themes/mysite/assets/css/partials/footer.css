@@ -30,8 +30,8 @@ footer {
     -webkit-flex: 0;
     -ms-flex: none;
     flex: none;
-    background-color: #fff;
-    box-shadow: 0px 3px 6px #000000;
+    box-shadow: 0 3px 6px #000000;
+    background: rgb(29, 33, 36);
 }
 
 .footer > span{

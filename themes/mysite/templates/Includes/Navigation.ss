@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light">
+<nav class="navbar navbar-expand-md navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">$SiteConfig.Title</a>
 

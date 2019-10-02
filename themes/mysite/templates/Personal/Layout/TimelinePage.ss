@@ -2,10 +2,10 @@
     <div class="timeline"
          <% if $Background %>style="background-image:
                  linear-gradient(
-                 rgba(0, 0, 0, 0.45),
+                 rgba(0, 0, 0, 0.95),
                  rgba(0, 0, 0, 0.45)),
                  url($Background.URL); background-size: cover; background-repeat: no-repeat;"<% end_if %>>
-        <div class="container">
+        <div class="container py-3">
             <% loop $Timeline.Sort('SortID') %>
                 <div class="timeline-container <% if $Odd %> left <% else %> right <% end_if %>">
                     <div class="timeline-content <% if $Top.Background %>tile-tint<% end_if %>">
