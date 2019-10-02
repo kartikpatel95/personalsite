@@ -2,7 +2,6 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 browserSync = () => {
     return {
-        entry: './src/index.js',
         watch: true,
         mode: "development",
         watchOptions: {
