@@ -1,0 +1,9 @@
+.timeline-content {
+  opacity: 0;
+
+  &.loaded {
+    opacity: 1;
+    transition: all 700ms ease-in;
+  }
+}
+
