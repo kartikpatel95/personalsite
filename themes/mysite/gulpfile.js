@@ -7,6 +7,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const browsersync = require('browser-sync').create();
 const rename = require('gulp-rename');
 
+//configurations
 const config = {
     browsersync: {
         files: [
@@ -57,6 +58,5 @@ const browserSync = () => {
 const watch = gulp.parallel(watchFiles, browserSync);
 
 exports.scssTak = scssTask;
-exports.jsTask = jsTask;
 exports.watch = watch;
 exports.default = watch;
