@@ -1,4 +1,7 @@
-<div class="homepage-wrapper">
+<div class="homepage-wrapper"
+     style="background-image: linear-gradient(
+     rgba(0, 0, 0, 0.95),
+     rgba(0, 0, 0, 0.45)), url('/public/_resources/themes/mysite/assets/img/architecture-min.jpg');">
     <div class="container h-100 d-flex align-items-center justify-content-center">
         <div class="row w-100">
             <div class="col-md-6 my-3 my-md-0 px-0">

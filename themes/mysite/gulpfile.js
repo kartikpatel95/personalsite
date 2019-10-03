@@ -1,4 +1,3 @@
-const path = require('path');
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
@@ -6,6 +5,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const sourcemaps = require('gulp-sourcemaps');
 const browsersync = require('browser-sync').create();
+const rename = require('gulp-rename');
 
 const config = {
     browsersync: {
@@ -22,25 +22,20 @@ const config = {
     }
 };
 
-//compile scss
-const scssTask = () => gulp.src(config.css.src)
+//compile scss and minify
+const scssTask = () => gulp.src([config.css.src, '!**/*.min.css'])
     .pipe(sourcemaps.init())
+    .pipe(rename({suffix: '.min'}))
     .pipe(sass())
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.css.dest))
     .pipe(browsersync.stream());
-scssTask.displayName = "scssTask";
-
-//minify css
-
-
-//minify js
-
+scssTask.displayName = "SCSS Task compiled and minified";
 
 //watch files
 const watchFiles = () => {
-    gulp.watch(config.css.src, {ignoreInitial: false}, scssTask)
+    gulp.watch(config.css.src, {ignoreInitial: false}, scssTask);
 };
 
 //browser reload on changes
@@ -61,4 +56,7 @@ const browserSync = () => {
 
 const watch = gulp.parallel(watchFiles, browserSync);
 
+exports.scssTak = scssTask;
+exports.jsTask = jsTask;
 exports.watch = watch;
+exports.default = watch;
