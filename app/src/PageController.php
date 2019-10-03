@@ -26,7 +26,7 @@ namespace {
 //            Requirements::themedCSS('assets/css/pages/skills');
 //            Requirements::themedCSS('assets/css/pages/login');
 
-            Requirements::themedCSS('dist/css/main');
+            Requirements::themedCSS('assets/css/layout');
         }
     }
 }

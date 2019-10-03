@@ -16,7 +16,7 @@ namespace Personal {
         public function init()
         {
             parent::init();
-            Requirements::themedCSS('assets/css/pages/home');
+//            Requirements::themedCSS('assets/css/pages/home');
         }
     }
 }

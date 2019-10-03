@@ -41,8 +41,7 @@
             "web.config"
         ],
         "expose": [
-            "themes/mysite/assets",
-            "themes/mysite/dist"
+            "themes/mysite/assets"
         ]
     },
     "config": {
