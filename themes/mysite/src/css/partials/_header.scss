@@ -1,0 +1,36 @@
+.navbar {
+  background: rgb(29, 33, 36);
+  box-shadow: 0 1px 6px #a49696;
+
+  .nav-item {
+    a {
+      &.navbar-brand {
+        font-weight: 500;
+        font-size: 25px;
+        color: #fff;
+      }
+
+      &.nav-link {
+        letter-spacing: 0.1em;
+        font-size: 14px;
+
+        &.link {
+          color: #fff;
+        }
+
+        &.link:hover{
+          color: #a9a9a9;
+        }
+      }
+
+      &.current {
+        color: #fff;
+        border-bottom: 2px solid #ff641c;
+      }
+
+      &.current:hover {
+        color: #fff;
+      }
+    }
+  }
+}

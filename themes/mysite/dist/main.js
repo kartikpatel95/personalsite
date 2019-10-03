@@ -86,14 +86,26 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/css/layout.scss":
+/*!*****************************!*\
+  !*** ./src/css/layout.scss ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleNotFoundError: Module not found: Error: Can't resolve '../../img/architecture-min.jpg' in 'C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\src\\\\css'\\n    at factory.create (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\webpack\\\\lib\\\\Compilation.js:925:10)\\n    at factory (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:401:22)\\n    at resolver (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:130:21)\\n    at asyncLib.parallel (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:224:22)\\n    at C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\neo-async\\\\async.js:2830:7\\n    at C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\neo-async\\\\async.js:6877:13\\n    at normalResolver.resolve (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:214:25)\\n    at doResolve (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:184:12)\\n    at hook.callAsync (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:238:5)\\n    at _fn0 (eval at create (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:15:1)\\n    at resolver.doResolve (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\UnsafeCachePlugin.js:37:5)\\n    at hook.callAsync (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:238:5)\\n    at _fn0 (eval at create (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:15:1)\\n    at hook.callAsync (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:238:5)\\n    at _fn0 (eval at create (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:27:1)\\n    at resolver.doResolve (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\DescriptionFilePlugin.js:42:38)\\n    at hook.callAsync (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:238:5)\\n    at _fn42 (eval at create (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:16:1)\\n    at hook.callAsync (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:238:5)\\n    at _fn0 (eval at create (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:27:1)\\n    at resolver.doResolve (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\DescriptionFilePlugin.js:42:38)\\n    at hook.callAsync (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:238:5)\\n    at _fn1 (eval at create (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:16:1)\\n    at hook.callAsync (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:238:5)\\n    at _fn0 (eval at create (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:15:1)\\n    at fs.stat (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\DirectoryExistsPlugin.js:22:13)\\n    at process.nextTick (C:\\\\var\\\\www\\\\personal\\\\mysite\\\\themes\\\\mysite\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\CachedInputFileSystem.js:73:15)\\n    at process._tickCallback (internal/process/next_tick.js:61:11)\");\n\n//# sourceURL=webpack:///./src/css/layout.scss?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("//needed for webpack console error\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_layout_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/layout.scss */ \"./src/css/layout.scss\");\n/* harmony import */ var _css_layout_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_layout_scss__WEBPACK_IMPORTED_MODULE_0__);\n//needed for webpack console error\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

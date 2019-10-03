@@ -1,32 +1,32 @@
-.navbar {
-    background: rgb(29, 33, 36);
-    box-shadow: 0 1px 6px #a49696;
-}
+/*.navbar {*/
+/*    background: rgb(29, 33, 36);*/
+/*    box-shadow: 0 1px 6px #a49696;*/
+/*}*/
 
-a.navbar-brand {
-    font-weight: 500;
-    font-size: 25px;
-    color: #fff;
-}
+/*a.navbar-brand {*/
+/*    font-weight: 500;*/
+/*    font-size: 25px;*/
+/*    color: #fff;*/
+/*}*/
 
-.nav-link {
-    letter-spacing: 0.1em;
-    font-size: 14px;
-}
+/*.nav-link {*/
+/*    letter-spacing: 0.1em;*/
+/*    font-size: 14px;*/
+/*}*/
 
-.nav-item a.nav-link.link{
-    color: #fff;
-}
+/*.nav-item a.nav-link.link{*/
+/*    color: #fff;*/
+/*}*/
 
-.nav-item a.nav-link.link:hover{
-    color: #a9a9a9;
-}
+/*.nav-item a.nav-link.link:hover{*/
+/*    color: #a9a9a9;*/
+/*}*/
 
-.nav-item a.nav-link.current {
-    color: #fff;
-    border-bottom: 2px solid #ff641c;
-}
+/*.nav-item a.nav-link.current {*/
+/*    color: #fff;*/
+/*    border-bottom: 2px solid #ff641c;*/
+/*}*/
 
-.nav-item a.nav-link.current:hover {
-    color: #fff;
-}
+/*.nav-item a.nav-link.current:hover {*/
+/*    color: #fff;*/
+/*}*/

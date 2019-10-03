@@ -20,11 +20,13 @@ namespace {
             Requirements::css("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
             Requirements::themedCSS('assets/css/frameworks/typography');
             Requirements::themedCSS('assets/css/frameworks/bootstrap.min');
-            Requirements::themedCSS('assets/css/partials/footer');
-            Requirements::themedCSS('assets/css/partials/header');
-            Requirements::themedCSS('assets/css/partials/timeline');
-            Requirements::themedCSS('assets/css/pages/skills');
-            Requirements::themedCSS('assets/css/pages/login');
+//            Requirements::themedCSS('assets/css/partials/footer');
+//            Requirements::themedCSS('assets/css/partials/header');
+//            Requirements::themedCSS('assets/css/partials/timeline');
+//            Requirements::themedCSS('assets/css/pages/skills');
+//            Requirements::themedCSS('assets/css/pages/login');
+
+            Requirements::themedCSS('dist/css/main');
         }
     }
 }
