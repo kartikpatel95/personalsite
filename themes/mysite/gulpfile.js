@@ -18,7 +18,7 @@ const config = {
         devURL: 'mysite.vcap.me',
     },
     css: {
-        src: './assets/css/**/*scss',
+        src: './assets/css/**/*.scss',
         dest: './assets/css'
     }
 };
