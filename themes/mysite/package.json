@@ -11,6 +11,6 @@
     "webpack-cli": "^3.3.9"
   },
   "scripts": {
-    "start": "webpack"
+    "start": "webpack --mode development"
   }
 }
