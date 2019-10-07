@@ -8,4 +8,4 @@ SilverStripe\Forms\HTMLEditor\TinyMCEConfig:
     - 'themes/mysite/assets/css/frameworks/editor.css'
 SilverStripe\Admin\LeftAndMain:
   extra_requirements_css:
-    - 'themes/mysite/assets/css/admin/admin.css'
+    - 'app/assets/css/admin.css'

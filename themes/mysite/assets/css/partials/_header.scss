@@ -3,6 +3,38 @@
   box-shadow: 0 1px 6px #a49696;
 
   .nav-item {
+    &.dropdown {
+      &.edge {
+        .dropdown-menu {
+          position: absolute;
+          left: auto;
+          right: 0;
+        }
+      }
+
+      .dropdown-menu {
+        &.show {
+          //background: rgba(0, 0, 0, 95);
+          border: 1px solid #fff;
+          margin-top: 10px;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          width: 200px;
+
+          div {
+            a {
+              font-weight: bold;
+              text-decoration: underline;
+            }
+          }
+
+          a {
+            padding: 5px 25px;
+          }
+        }
+      }
+    }
+
     a {
       &.navbar-brand {
         font-weight: 500;
@@ -18,7 +50,7 @@
           color: #fff;
         }
 
-        &.link:hover{
+        &.link:hover {
           color: #a9a9a9;
         }
       }

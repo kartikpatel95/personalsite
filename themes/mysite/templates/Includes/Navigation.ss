@@ -14,14 +14,16 @@
                             <% if $Children %>role="button" aria-expanded="false" data-toggle="dropdown"<% end_if %>
                            href="$Link" title="Go to the $Title page">$MenuTitle</a>
                         <% if $Children %>
-                            <div class="dropdown-menu">
+                            <ul class="dropdown-menu">
                                 <div class="d-flex current-page-link">
                                     <a href="$Link" title="Go to $Title page">$MenuTitle</a>
                                 </div>
                                 <% loop $Children %>
-                                    <a class="dropdown-item $LinkingMode" href="$Link" title="Go to the $Title page">$MenuTitle</a>
+                                    <li><a class="dropdown-item $LinkingMode" href="$Link"
+                                           title="Go to the $Title page">$MenuTitle</a>
+                                    </li>
                                 <% end_loop %>
-                            </div>
+                            </ul>
                         <% end_if %>
                     </li>
                 <% end_loop %>
