@@ -2,6 +2,9 @@
 
 namespace {
 
+    use Personal\ImageHelpers;
+    use SilverStripe\AssetAdmin\Forms\UploadField;
+    use SilverStripe\Assets\Image;
     use SilverStripe\CMS\Model\SiteTree;
     use SilverStripe\Forms\CheckboxField;
     use SilverStripe\Forms\FieldGroup;
@@ -19,7 +22,13 @@ namespace {
             'ShowTitle' => 1
         ];
 
-        private static $has_one = [];
+        private static $has_one = [
+            'Background' => Image::class
+        ];
+
+        private static $owns = [
+            'Background'
+        ];
 
         public function getCMSFields()
         {
@@ -29,6 +38,11 @@ namespace {
             )
                 ->setTitle('Layout');
             $fields->addFieldToTab('Root.Main', $layout, 'Content');
+
+            $fields->addFieldToTab('Root.Main',
+                $background = UploadField::create('Background'));
+            ImageHelpers::setImageDetails($background, 'Backgrounds');
+
             return $fields;
         }
     }

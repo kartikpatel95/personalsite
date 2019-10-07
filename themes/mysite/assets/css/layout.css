@@ -33,6 +33,10 @@ img {
   max-width: 100%;
   height: auto; }
 
+.background-image-extra {
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .homepage-wrapper {
   background-size: cover;
   background-repeat: no-repeat;
@@ -229,7 +233,8 @@ img {
 
 .portfolio-page a:hover {
   color: #fff;
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: none; }
 
 .portfolio-page .pagination {
   display: flex;
