@@ -14,13 +14,18 @@
 
       .dropdown-menu {
         &.show {
-          //background: rgba(0, 0, 0, 95);
-          border: 1px solid #fff;
           margin-top: 10px;
           border-top-left-radius: 0;
           border-top-right-radius: 0;
           width: 200px;
 
+          .dropdown-item {
+            &.current {
+              color: #000;
+              font-weight: bold;
+              border-bottom: none;
+            }
+          }
           div {
             a {
               font-weight: bold;
