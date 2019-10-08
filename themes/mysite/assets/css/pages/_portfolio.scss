@@ -27,13 +27,16 @@
   .pagination {
     display: flex;
     justify-content: center;
+
     .page-item {
       margin: 0 5px;
+
       .page-link {
         color: #000;
         border-radius: 50%;
         font-size: 14px;
       }
+
       &.active {
         .page-link {
           font-weight: bold;
@@ -58,5 +61,12 @@
         }
       }
     }
+  }
+}
+
+img {
+  &.port-images {
+    width: 100%;
+    height: 500px;
   }
 }

@@ -16,8 +16,10 @@ namespace {
             Requirements::themedJavascript('assets/javascript/frameworks/jquery-3.3.1.min');
             Requirements::themedJavascript('assets/javascript/frameworks/bootstrap');
             Requirements::javascript('https://unpkg.com/swiper/js/swiper.min.js');
+            Requirements::css('https://unpkg.com/swiper/css/swiper.min.css');
 
             Requirements::themedJavascript('assets/javascript/navigation');
+            Requirements::themedJavascript('assets/javascript/swiper');
 
             Requirements::css('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
             Requirements::css("https://use.fontawesome.com/releases/v5.8.2/css/all.css");

@@ -2,6 +2,8 @@
 
 namespace Personal {
 
+    use SilverStripe\AssetAdmin\Forms\UploadField;
+    use SilverStripe\Assets\Image;
     use SilverStripe\Forms\ListboxField;
 
     /**
@@ -15,8 +17,16 @@ namespace Personal {
         private static $icon_class = "font-icon-menu-files";
         private static $can_be_root = false;
 
+        private static $has_many = [
+            'PortImages' => Image::class
+        ];
+
         private static $many_many = [
           'Languages' => Language::class
+        ];
+
+        private static $owns = [
+            'PortImages'
         ];
 
         public function getCMSFields()
@@ -25,6 +35,10 @@ namespace Personal {
             $fields->addFieldToTab('Root.Main',
                 ListboxField::create('Languages', "Languages",
                     $this->getLanguageOptions()), 'Content');
+
+            $fields->addFieldToTab('Root.Images', $portfolio = UploadField::create('PortImages', 'Portfolio Images'));
+            ImageHelpers::setImageDetails($portfolio, 'Portfolio');
+
             return $fields;
         }
 

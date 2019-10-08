@@ -7,13 +7,11 @@
  */
 namespace Personal {
 
-    use Page;
-
     /**
      * Class HomePage
      * @package Personal
      */
-    class HomePage extends Page {
+    class HomePage extends \Page {
         private static $table_name = "HomePage";
         private static $description = "Used only for homepage";
         private static $icon_class = "font-icon-home";
