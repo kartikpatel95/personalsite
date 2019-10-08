@@ -11,7 +11,7 @@
         <% if $PageArticles %>
             <div class="row">
                 <% loop $PageArticles %>
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-lg-6 col-xl-4">
                         <a href="$Link">
                             <div class="article-wrapper">
                                 $Title

@@ -5,17 +5,11 @@
              rgba(0, 0, 0, 0.95),
              rgba(0, 0, 0, 0.45)
              ), url($Background.URL); background-repeat: no-repeat; background-size: cover;" <% end_if %>>
-    <div class="container h-100 d-flex align-items-center pt-5">
-        <div>
-            <% if $Title && $ShowTitle %>
-                <h1 class="pt-4 <% if not $Content %>pb-5<% end_if %>">$Title</h1>
-            <% end_if %>
-            <% if $Content %>
-                <div class="content">
-                    $Content
-                </div>
-            <% end_if %>
-            <% if $Tiles %>
+    <div class="container h-100">
+        <% include TitleContent %>
+
+        <% if $Tiles %>
+            <div class="py-sm-3">
                 <h1>Technical Skills</h1>
                 <div class="row pb-4">
                     <% loop $Tiles.Sort('SortID') %>
@@ -33,9 +27,7 @@
                         <% end_if %>
                     <% end_loop %>
                 </div>
-            <% end_if %>
 
-            <% if $Tiles %>
                 <h1>Management Skills</h1>
                 <div class="row pb-4">
                     <% loop $Tiles.Sort('SortID') %>
@@ -53,7 +45,7 @@
                         <% end_if %>
                     <% end_loop %>
                 </div>
-            <% end_if %>
-        </div>
+            </div>
+        <% end_if %>
     </div>
 </div>

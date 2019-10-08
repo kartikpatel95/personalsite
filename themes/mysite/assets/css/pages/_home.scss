@@ -1,5 +1,10 @@
 .typography {
   height: 100%;
+
+  .title {
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
 }
 
 img {
@@ -31,7 +36,6 @@ img {
     height: 100%;
 
     .profile {
-      border-radius: 15%;
       width: 190px;
     }
   }

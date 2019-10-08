@@ -5,7 +5,7 @@
 
     <div class="container h-100 d-flex align-items-center justify-content-center">
         <div class="row w-100">
-            <div class="col-md-6 my-3 my-md-0 px-0">
+            <div class="col-lg-12 col-xl-6 my-3 my-xl-0 px-0">
                 <div class="personal-statement">
                     <% if $SiteConfig.Profile %>
                         <div class="d-flex justify-content-center">
@@ -19,7 +19,7 @@
                     <% end_if %>
                 </div>
             </div>
-            <div class="col-md-6 home-user-details mb-3 mb-md-0">
+            <div class="col-lg-12c col-xl-6  home-user-details mb-3 mb-lg-0">
                 <% include HomeDetails %>
             </div>
 
