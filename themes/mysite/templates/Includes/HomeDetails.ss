@@ -14,7 +14,7 @@
             Phone:
         </div>
         <div class="details">
-            $PhoneNumber
+            <a href="tel:$PhoneNumber">$PhoneNumber</a>
         </div>
     <% end_if %>
     <% if $Email %>
@@ -22,7 +22,7 @@
             Email:
         </div>
         <div class="details">
-            $Email
+            <a href="mailto:$Email">$Email</a>
         </div>
     <% end_if %>
     <% if $Address %>
