@@ -47,7 +47,8 @@ img {
   max-height: 100%; }
   .homepage-wrapper .home-user-details {
     background: rgba(241, 241, 241, 0.8);
-    padding: 20px; }
+    padding: 40px;
+    min-height: 300px; }
   .homepage-wrapper .personal-statement {
     background: rgba(255, 255, 255, 0.65);
     padding: 20px;
@@ -92,7 +93,7 @@ img {
     position: absolute;
     bottom: 0;
     padding: 30px 0;
-    width: 80%; } }
+    width: 90%; } }
 
 /* The actual timeline (the vertical ruler) */
 .timeline {

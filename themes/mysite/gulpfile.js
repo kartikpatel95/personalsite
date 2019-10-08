@@ -40,10 +40,12 @@ const config = {
 //     .pipe(browsersync.stream());
 
 const scssTaskCompile = () => gulp.src(config.css.src)
+    .pipe(sourcemaps.init())
     .pipe(cached('scss'))
     .pipe(dependents())
     .pipe(sass())
     .on('error', sass.logError)
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.css.dest))
     .pipe(browsersync.stream());
 scssTaskCompile.displayName = "SCSS Task compiling";
