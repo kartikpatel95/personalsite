@@ -7,10 +7,21 @@
     align-items: center;
     border: 10px inset;
     margin-bottom: 15px;
+    animation: fadeIn 5s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   .article-wrapper:hover {
     background: rgba(23, 8, 136, 0.65);
+    transform: scale(1.05);
   }
 
   a {
