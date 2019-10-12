@@ -349,7 +349,7 @@ img.port-images {
     left: auto;
     right: 0; }
   .navbar .nav-item.dropdown .dropdown-menu.show {
-    margin-top: 33px;
+    margin-top: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     min-width: 200px; }
@@ -362,6 +362,9 @@ img.port-images {
       text-decoration: underline; }
     .navbar .nav-item.dropdown .dropdown-menu.show a {
       padding: 5px 25px; }
+  @media (min-width: 992px) {
+    .navbar .nav-item.dropdown .dropdown-menu.show {
+      margin-top: 33px; } }
   .navbar .nav-item a.navbar-brand {
     font-weight: 500;
     font-size: 25px;
