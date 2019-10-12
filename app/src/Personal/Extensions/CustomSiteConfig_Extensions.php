@@ -41,12 +41,14 @@ namespace Personal {
 
         private static $has_one = [
             'Profile' => Image::class,
-            'CV' => File::class
+            'CV' => File::class,
+            'SiteLogo' => File::class
         ];
 
         private static $owns = [
             'Profile',
-            'CV'
+            'CV',
+            'SiteLogo'
         ];
 
         private static $has_many = [
@@ -55,6 +57,9 @@ namespace Personal {
 
         public function updateCMSFields(FieldList $fields)
         {
+            $fields->addFieldToTab('Root.Main', $logo = UploadField::create('SiteLogo'));
+            ImageHelpers::setImageDetails($logo, 'Logos');
+
             $fields->addFieldsToTab('Root.Main', [
                 TextField::create('Position', 'Work Position'),
                 TextField::create('PhoneNumber', 'Phone Number'),

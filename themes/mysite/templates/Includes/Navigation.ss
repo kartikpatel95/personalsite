@@ -1,6 +1,12 @@
-<nav class="navbar navbar-expand-md navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/">$SiteConfig.Title</a>
+        <a class="navbar-brand" href="/">
+            <% if $SiteConfig.SiteLogo %>
+                <img src="$SiteConfig.SiteLogo.URL" alt="$SiteConfig.SiteLogo.Title" />
+            <% else %>
+                $SiteConfig.Title
+            <% end_if %>
+        </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

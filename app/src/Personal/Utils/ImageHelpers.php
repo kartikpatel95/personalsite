@@ -15,7 +15,7 @@ namespace Personal {
         public static function setImageDetails($image, $name = 'Layout')
         {
             $image->setFolderName($name);
-            $image->getValidator()->setAllowedExtensions(['jpeg', 'png', 'jpg', 'jif']);
+            $image->getValidator()->setAllowedExtensions(['jpeg', 'png', 'jpg', 'jif', 'svg']);
         }
     }
 }

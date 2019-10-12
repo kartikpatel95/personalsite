@@ -9,3 +9,6 @@ SilverStripe\Forms\HTMLEditor\TinyMCEConfig:
 SilverStripe\Admin\LeftAndMain:
   extra_requirements_css:
     - 'app/assets/css/admin.css'
+SilverStripe\Assets\File:
+  allowed_extensions:
+    - svg

@@ -1,6 +1,7 @@
 .navbar {
   background: rgb(29, 33, 36);
   box-shadow: 0 1px 6px #a49696;
+  z-index: 1;
 
   .nav-item {
     &.dropdown {
@@ -69,5 +70,11 @@
         color: #fff;
       }
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    height: 100px;
   }
 }
