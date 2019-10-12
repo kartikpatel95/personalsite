@@ -48,13 +48,33 @@ img {
   .homepage-wrapper .home-user-details {
     background: rgba(241, 241, 241, 0.8);
     padding: 40px;
-    min-height: 300px; }
+    min-height: 300px;
+    animation: slideInRight 5s; }
   .homepage-wrapper .personal-statement {
     background: rgba(255, 255, 255, 0.65);
     padding: 20px;
-    height: 100%; }
+    height: 100%;
+    animation: slideInLeft 5s; }
     .homepage-wrapper .personal-statement .profile {
       width: 190px; }
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px); }
+  50% {
+    transform: translateX(0); }
+  100% {
+    opacity: 1; } }
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(250px); }
+  50% {
+    transform: translateX(0); }
+  100% {
+    opacity: 1; } }
   .homepage-wrapper .heading {
     letter-spacing: 0.05em;
     color: #182153;
@@ -77,12 +97,22 @@ img {
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    animation: slideUp 5s; }
     .homepage-wrapper .social-icons i {
       color: #fff;
       font-size: 30px; }
     .homepage-wrapper .social-icons i:hover {
       color: orangered; }
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(250px); }
+  50% {
+    transform: translateY(0); }
+  100% {
+    opacity: 1; } }
 
 @media screen and (min-width: 768px) {
   .home-user-details {
