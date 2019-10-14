@@ -305,6 +305,10 @@ img.port-images {
   img.port-images {
     height: 500px; } }
 
+.attribution {
+  color: #fff;
+  background-color: rgba(25, 32, 41, 0.5); }
+
 .swiper-wrapper {
   background-color: #fff;
   padding: 5px;

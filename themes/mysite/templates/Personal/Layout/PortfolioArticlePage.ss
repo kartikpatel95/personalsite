@@ -8,6 +8,11 @@
     <div class="container">
         <% include TitleContent %>
 
+        <% if $Attribution %>
+            <div class="mb-3 p-3 attribution">
+                <strong>Attributed Company:</strong>  $Attribution
+            </div>
+        <% end_if %>
         <div class="position-relative">
             <div class="swiper-wrapper">
                 <% if $PortImages %>

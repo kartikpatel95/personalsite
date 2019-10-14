@@ -17,7 +17,8 @@
         "undefinedoffset/sortablegridfield": "^2.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.7"
+        "phpunit/phpunit": "^5.7",
+        "deployer/deployer": "^6.5"
     },
     "autoload": {
         "psr-4": {
@@ -43,6 +44,9 @@
         "expose": [
             "themes/mysite/assets"
         ]
+    },
+    "scripts": {
+        "dep": "php vendor/deployer/deployer/bin/dep"
     },
     "config": {
         "process-timeout": 600
