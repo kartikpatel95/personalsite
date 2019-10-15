@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-md navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
             <% if $SiteConfig.SiteLogo %>
-                <img src="$SiteConfig.SiteLogo.URL" alt="$SiteConfig.SiteLogo.Title" />
+                <img src="$SiteConfig.SiteLogo.URL" class="site-logo" alt="$SiteConfig.SiteLogo.Title" />
             <% else %>
                 $SiteConfig.Title
             <% end_if %>

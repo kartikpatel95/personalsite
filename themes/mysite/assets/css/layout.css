@@ -386,9 +386,13 @@ img.port-images {
   .navbar .nav-item a.current:hover {
     color: #fff; }
 
-@media (min-width: 992px) {
-  .navbar {
-    height: 100px; } }
+.navbar-brand {
+  display: none;
+  width: 230px; }
+
+@media (min-width: 380px) {
+  .navbar-brand {
+    display: inline-block; } }
 
 /* flexy sticky footer */
 html {
