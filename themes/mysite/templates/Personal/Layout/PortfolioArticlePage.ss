@@ -8,12 +8,6 @@
     <div class="container">
         <% include TitleContent %>
 
-        <%--<% if $Attribution %>--%>
-            <%--<div class="p-3 attribution">--%>
-                <%--<strong>Attributed Company:</strong>  $Attribution--%>
-            <%--</div>--%>
-        <%--<% end_if %>--%>
-
         <% if $Languages %>
             <div class="mobile-language-wrapper attribution p-3">
                 <span class="mr-2"><strong>Languages:</strong></span>
@@ -27,7 +21,7 @@
                 <% if $PortfolioItems %>
                     <div class="swiper-container gallery-top">
                         <div class="swiper-wrapper">
-                            <% loop $PortfolioItems %>
+                            <% loop $PortfolioItems.Sort('SortID') %>
                                 <div class="swiper-slide">
                                     <img src="$PortImages.Link" class="port-images" alt="$PortImages.Title"/>
                                 </div>
@@ -39,7 +33,7 @@
 
                         <div class="swiper-container gallery-thumbs">
                             <div class="swiper-wrapper d-flex justify-content-center">
-                                <% loop $PortfolioItems %>
+                                <% loop $PortfolioItems.Sort('SortID') %>
                                     <div class="swiper-slide">
                                         <img src="$PortImages.Link" alt="$PortImages.Title"/>
                                     </div>

@@ -28,6 +28,10 @@ namespace Personal {
             'PortImages' => Image::class
         ];
 
+        private static $summary_fields = [
+          'getImageIcon' => 'Image'
+        ];
+
         private static $owns = [
             'PortImages'
         ];
@@ -41,5 +45,14 @@ namespace Personal {
 
             return $fields;
         }
+
+        public function getImageIcon() {
+            if($this->PortImages()->ID){
+                return $this->PortImages->ScaleWidth(150);
+            }else{
+                return '(No-Image)';
+            }
+        }
+
     }
 }
