@@ -42,13 +42,15 @@ namespace Personal {
         private static $has_one = [
             'Profile' => Image::class,
             'CV' => File::class,
-            'SiteLogo' => File::class
+            'SiteLogo' => File::class,
+            'SiteBackground' => Image::class
         ];
 
         private static $owns = [
             'Profile',
             'CV',
-            'SiteLogo'
+            'SiteLogo',
+            'SiteBackground'
         ];
 
         private static $has_many = [
@@ -59,6 +61,11 @@ namespace Personal {
         {
             $fields->addFieldToTab('Root.Main', $logo = UploadField::create('SiteLogo'));
             ImageHelpers::setImageDetails($logo, 'Logos');
+
+            $fields->addFieldToTab('Root.Main',
+                $background = UploadField::create('SiteBackground'));
+            ImageHelpers::setImageDetails($background, 'Backgrounds');
+
 
             $fields->addFieldsToTab('Root.Main', [
                 TextField::create('Position', 'Work Position'),

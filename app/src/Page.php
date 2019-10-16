@@ -22,13 +22,6 @@ namespace {
             'ShowTitle' => 1
         ];
 
-        private static $has_one = [
-            'Background' => Image::class
-        ];
-
-        private static $owns = [
-            'Background'
-        ];
 
         public function getCMSFields()
         {
@@ -38,10 +31,6 @@ namespace {
             )
                 ->setTitle('Layout');
             $fields->addFieldToTab('Root.Main', $layout, 'Content');
-
-            $fields->addFieldToTab('Root.Main',
-                $background = UploadField::create('Background'));
-            ImageHelpers::setImageDetails($background, 'Backgrounds');
 
             return $fields;
         }

@@ -1,10 +1,5 @@
 <% if $Timeline %>
-    <div class="timeline"
-         <% if $Background %>style="background-image:
-                 linear-gradient(
-                 rgba(0, 0, 0, 0.95),
-                 rgba(0, 0, 0, 0.45)),
-                 url($Background.URL); background-size: cover; background-repeat: no-repeat;"<% end_if %>>
+    <div class="timeline">
         <div class="container h-100 py-3 d-flex justify-content-center flex-column">
             <div>
                 <% loop $Timeline.Sort('SortID') %>

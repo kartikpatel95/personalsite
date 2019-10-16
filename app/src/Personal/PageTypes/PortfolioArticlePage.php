@@ -4,13 +4,15 @@ namespace Personal {
 
     use SilverStripe\AssetAdmin\Forms\UploadField;
     use SilverStripe\Assets\Image;
+    use SilverStripe\Forms\GridField\GridField;
+    use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
     use SilverStripe\Forms\ListboxField;
     use SilverStripe\Forms\TextField;
+    use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 
     /**
      * Class PortfolioArticlePage
      * @package Personal
-     * @property string $Attribution
      */
     class PortfolioArticlePage extends \Page
     {
@@ -19,20 +21,10 @@ namespace Personal {
         private static $icon_class = "font-icon-menu-files";
         private static $can_be_root = false;
 
-        private static $db = [
-            'Attribution' => 'Varchar'
-        ];
-
-        private static $has_many = [
-            'PortImages' => Image::class
-        ];
 
         private static $many_many = [
-            'Languages' => Language::class
-        ];
-
-        private static $owns = [
-            'PortImages'
+            'Languages' => Language::class,
+            'PortfolioItems' => PortfolioItems::class
         ];
 
         public function getCMSFields()
@@ -41,9 +33,7 @@ namespace Personal {
             $fields->addFieldToTab('Root.Main',
                 ListboxField::create('Languages', "Languages",
                     $this->getLanguageOptions()), 'Content');
-            $fields->addFieldToTab('Root.Main', TextField::create('Attribution', 'Attribution'), 'Content');
-            $fields->addFieldToTab('Root.Images', $portfolio = UploadField::create('PortImages', 'Portfolio Images'));
-            ImageHelpers::setImageDetails($portfolio, 'Portfolio');
+            $fields->addFieldToTab('Root.PortfolioItems', $this->getPortfolioItemsGrid());
 
             return $fields;
         }
@@ -55,6 +45,14 @@ namespace Personal {
         {
             $language = Language::get()->map('ID', 'Name');
             return $language;
+        }
+
+        public function getPortfolioItemsGrid(){
+            $portGrid = GridField::create(
+                'PortfolioItems', 'Portfolio Items', $this->PortfolioItems(), GridFieldConfig_RecordEditor::create()
+            );
+            $portGrid->getConfig()->addComponent(new GridFieldOrderableRows('SortID'));
+            return $portGrid;
         }
     }
 }

@@ -12,7 +12,12 @@
 <header>
 	<% include Header %>
 </header>
-<div class="main">
+<div class="main" <% if $SiteConfig.SiteBackground %>
+	 style="background-image:  linear-gradient(
+			 rgba(0, 0, 0, 0.95),
+			 rgba(0, 0, 0, 0.45)),
+			 url($SiteConfig.SiteBackground.Link);
+			 background-size: cover; background-repeat: no-repeat;"<% end_if %>>
 	<div class="typography">
 		$Layout
 	</div>

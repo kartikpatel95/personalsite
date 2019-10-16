@@ -7,6 +7,3 @@ SilverStripe\SiteConfig\SiteConfig:
 SilverStripe\Forms\FormField:
   extensions:
     - Personal\DefaultFormField_Extensions
-SilverStripe\Assets\Image:
-  extensions:
-    - Personal\Image_Extension

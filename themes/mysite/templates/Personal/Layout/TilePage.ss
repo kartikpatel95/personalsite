@@ -1,10 +1,4 @@
-<div class="h-100 tiles-skills"
-    <% if $Background %>
-     style="background-image:
-             linear-gradient(
-             rgba(0, 0, 0, 0.95),
-             rgba(0, 0, 0, 0.45)
-             ), url($Background.URL); background-repeat: no-repeat; background-size: cover;" <% end_if %>>
+<div class="h-100 tiles-skills">
     <div class="container h-100">
         <% include TitleContent %>
 
