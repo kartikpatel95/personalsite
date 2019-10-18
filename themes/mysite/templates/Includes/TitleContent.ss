@@ -1,7 +1,7 @@
 <% if $ShowTitle || $Content %>
-    <div class="py-sm-4">
+    <div class="py-4">
         <% if $Title && $ShowTitle %>
-            <h1 class="pt-2 title <% if not $Content %>pb-3<% end_if %>"><strong>$Title</strong></h1>
+            <h1 class="title <% if not $Content %>pb-3<% end_if %>"><strong>$Title</strong></h1>
         <% end_if %>
         <% if $Content %>
             <div class="content pb-2 <% if not $ShowTitle %> pt-3 <% end_if %>">

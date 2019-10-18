@@ -6,11 +6,17 @@
              ), url($Background.URL);" <% end_if %>>
 
     <div class="container">
+
+    <% if $BreadCrumbs %>
+    <div class="mt-3 bread-crumb">
+        $BreadCrumbs
+    </div>
+    <% end_if %>
         <% include TitleContent %>
 
         <% if $Languages %>
             <div class="mobile-language-wrapper attribution p-3">
-                <span class="mr-2"><strong>Languages:</strong></span>
+                <span class="mr-2"><strong>Tools:</strong></span>
                 <% loop $Languages %>
                 <span class="mobile-language-tag"> $Name</span>
             <% end_loop %>

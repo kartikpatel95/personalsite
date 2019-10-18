@@ -3,7 +3,7 @@
         <% include TitleContent %>
 
         <% if $Tiles %>
-            <div class="py-sm-3">
+            <div class="py-3">
                 <h1>Technical Skills</h1>
                 <div class="row pb-4">
                     <% loop $Tiles.Sort('SortID') %>
