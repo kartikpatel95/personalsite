@@ -292,6 +292,12 @@ img {
     .portfolio-page .pagination .page-item.disabled .page-link {
       color: #dddddd; }
 
+.bread-crumb {
+  padding: 10px;
+  background: rgba(37, 35, 35, 0.4);
+  padding: 10px;
+  color: #dddddd; }
+
 img.port-images {
   width: 100%; }
 

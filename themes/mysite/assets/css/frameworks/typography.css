@@ -18,15 +18,9 @@ body a {
     text-decoration: none;
 }
 
-/* this removes the underline from all links */
-body a:link {
-    -webkit-tap-highlight-color: #000
-}
-
 .typography {
     height: 100%;
 }
-
 
 /* HEADERS */
 .typography h1,
@@ -111,8 +105,7 @@ body a:link {
 }
 
 .typography a:hover {
-    color: #000;
-    /*border-bottom: 1px dashed #B80000;*/
+    color: #0056b3;
 }
 
 .typography a:focus {
