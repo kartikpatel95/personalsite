@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: kartik
@@ -16,11 +17,12 @@ namespace Personal {
      * Class PortfolioItems
      * @package Personal
      */
-    class PortfolioItems extends DataObject {
+    class PortfolioItems extends DataObject
+    {
         private static $table_name = "PortfolioItems";
 
         private static $db = [
-          'SortID' => 'Int'
+            'SortID' => 'Int'
         ];
 
         private static $has_one = [
@@ -29,7 +31,12 @@ namespace Personal {
         ];
 
         private static $summary_fields = [
-          'getImageIcon' => 'Image'
+            'PortImages.Title' => 'Title',
+            'getImageIcon' => 'Image'
+        ];
+
+        private static $searchable_fields = [
+            'PortImages.Title'
         ];
 
         private static $owns = [
@@ -46,13 +53,13 @@ namespace Personal {
             return $fields;
         }
 
-        public function getImageIcon() {
-            if($this->PortImages()->ID){
+        public function getImageIcon()
+        {
+            if ($this->PortImages()->ID) {
                 return $this->PortImages->ScaleWidth(150);
-            }else{
+            } else {
                 return '(No-Image)';
             }
         }
-
     }
 }
