@@ -2,12 +2,9 @@
 
 namespace Personal {
 
-    use SilverStripe\AssetAdmin\Forms\UploadField;
-    use SilverStripe\Assets\Image;
     use SilverStripe\Forms\GridField\GridField;
     use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
     use SilverStripe\Forms\ListboxField;
-    use SilverStripe\Forms\TextField;
     use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 
     /**
