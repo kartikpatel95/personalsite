@@ -18,7 +18,9 @@
             <div class="mobile-language-wrapper attribution p-3">
                 <span class="mr-2"><strong>Tools:</strong></span>
                 <% loop $Languages %>
+                    <div class="d-inline-block my-1">
                 <span class="mobile-language-tag"> $Name</span>
+                    </div>
             <% end_loop %>
             </div>
         <% end_if %>
@@ -29,7 +31,9 @@
                         <div class="swiper-wrapper">
                             <% loop $PortfolioItems.Sort('SortID') %>
                                 <div class="swiper-slide">
-                                    <img src="$PortImages.Link" class="port-images" alt="$PortImages.Title"/>
+                                    <a href="$PortImages.Link" data-lightbox="port-slider">
+                                        <img src="$PortImages.Link" class="port-images" alt="$PortImages.Title"/>
+                                    </a>
                                 </div>
                             <% end_loop %>
                         </div>
