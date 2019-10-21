@@ -2,6 +2,8 @@
 
 namespace Personal {
 
+    use gorriecoe\Link\Models\Link;
+    use gorriecoe\LinkField\LinkField;
     use SilverStripe\Forms\GridField\GridField;
     use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
     use SilverStripe\Forms\ListboxField;
@@ -18,6 +20,9 @@ namespace Personal {
         private static $icon_class = "font-icon-menu-files";
         private static $can_be_root = false;
 
+        private static $has_one = [
+          'PortfolioURL' => Link::class
+        ];
 
         private static $many_many = [
             'Languages' => Language::class,
@@ -28,8 +33,9 @@ namespace Personal {
         {
             $fields = parent::getCMSFields();
             $fields->addFieldToTab('Root.Main',
-                ListboxField::create('Languages', "Languages",
+                ListboxField::create('Languages', "Tools",
                     $this->getLanguageOptions()), 'Content');
+            $fields->addFieldToTab('Root.Main', LinkField::create('PortfolioURL', 'Portfolio URL', $this), 'Content');
             $fields->addFieldToTab('Root.PortfolioItems', $this->getPortfolioItemsGrid());
 
             return $fields;
