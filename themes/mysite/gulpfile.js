@@ -19,7 +19,7 @@ const config = {
             '/app/assets/css/**/*.css',
             './assets/javascript/**/*.js'
         ],
-        devURL: 'mysite.vcap.me',
+        devURL: 'personalsite.vcap.me',
     },
     css: {
         src: './assets/css/**/*.scss',
