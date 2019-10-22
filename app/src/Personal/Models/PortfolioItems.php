@@ -10,6 +10,7 @@
 namespace Personal {
 
     use SilverStripe\Assets\Image;
+    use SilverStripe\Dev\Debug;
     use SilverStripe\ORM\DataObject;
     use SilverStripe\AssetAdmin\Forms\UploadField;
 
@@ -48,9 +49,17 @@ namespace Personal {
             $fields = parent::getCMSFields();
             $fields->removeFieldsFromTab('Root.Main', ['SortID', 'PortfolioArticleID']);
             $fields->addFieldToTab('Root.Main', $portfolio = UploadField::create('PortImages', 'Portfolio Images'));
-            ImageHelpers::setImageDetails($portfolio, 'Portfolio');
+            ImageHelpers::setImageDetails($portfolio, 'Portfolio/'. $this->getArticlePageTitle());
 
             return $fields;
+        }
+
+        /**
+         * @return string
+         */
+        public function getArticlePageTitle(){
+            $pages = PortfolioArticlePage::get()->byID($this->PortfolioArticleID);
+            return $pages->Title;
         }
 
         public function getImageIcon()

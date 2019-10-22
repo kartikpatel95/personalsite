@@ -21,12 +21,15 @@ namespace Personal {
         private static $can_be_root = false;
 
         private static $has_one = [
-          'PortfolioURL' => Link::class
+            'PortfolioURL' => Link::class
+        ];
+
+        private static $has_many = [
+            'PortfolioItems' => PortfolioItems::class
         ];
 
         private static $many_many = [
             'Languages' => Language::class,
-            'PortfolioItems' => PortfolioItems::class
         ];
 
         public function getCMSFields()
@@ -50,7 +53,8 @@ namespace Personal {
             return $language;
         }
 
-        public function getPortfolioItemsGrid(){
+        public function getPortfolioItemsGrid()
+        {
             $portGrid = GridField::create(
                 'PortfolioItems', 'Portfolio Items', $this->PortfolioItems(), GridFieldConfig_RecordEditor::create()
             );
