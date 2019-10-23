@@ -1,3 +1,6 @@
+.typography .tiles-skills .title h1 {
+  font-weight: bold; }
+
 .typography .skill-title {
   font-size: 20px;
   font-weight: 200; }
@@ -467,5 +470,3 @@ footer {
   padding: 10px;
   text-align: center;
   color: #8c8981; }
-
-/*# sourceMappingURL=layout.css.map */

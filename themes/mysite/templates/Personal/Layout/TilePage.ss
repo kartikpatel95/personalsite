@@ -4,7 +4,9 @@
 
         <% if $Tiles %>
             <div class="py-3">
-                <h1>Technical Skills</h1>
+                <div class="title">
+                    <h1>Technical Skills</h1>
+                </div>
                 <div class="row pb-4">
                     <% loop $Tiles.Sort('SortID') %>
                         <% if $SkillType == "Technical" %>
@@ -22,7 +24,9 @@
                     <% end_loop %>
                 </div>
 
-                <h1>Management Skills</h1>
+                <div class="title">
+                    <h1>Management Skills</h1>
+                </div>
                 <div class="row pb-4">
                     <% loop $Tiles.Sort('SortID') %>
                         <% if $SkillType == "Management" %>

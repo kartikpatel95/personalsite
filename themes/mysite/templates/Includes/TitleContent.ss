@@ -1,5 +1,5 @@
 <% if $ShowTitle || $Content %>
-    <div class="py-4">
+    <div class="py-0 pt-3 py-sm-4">
         <% if $Title && $ShowTitle %>
             <h1 class="title <% if not $Content %>pb-3<% end_if %>"><strong>$Title</strong></h1>
         <% end_if %>

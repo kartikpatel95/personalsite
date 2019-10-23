@@ -26,7 +26,7 @@
 
 
         <% if $Languages %>
-            <div class="mobile-language-wrapper attribution p-3">
+            <div class="mobile-language-wrapper attribution p-2">
                 <span class="mr-2"><strong>Tools:</strong></span>
                 <% loop $Languages %>
                     <div class="d-inline-block my-1">
