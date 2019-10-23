@@ -46,7 +46,9 @@
         ]
     },
     "scripts": {
-        "dep": "php vendor/deployer/deployer/bin/dep"
+        "dep": "php vendor/deployer/deployer/bin/dep",
+        "deploy": "dep deploy",
+        "deploy:unlock": "dep deploy:unlock"
     },
     "config": {
         "process-timeout": 600

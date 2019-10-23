@@ -16,7 +16,7 @@
 
 
         <% if $PortfolioURL %>
-            <div class="attribution px-3">
+            <div class="attribution px-2">
                 <span class="mr-2"><strong>URL:</strong></span>
                 <div class="d-inline-block my-1">
                     <a href="$PortfolioURL.URL" $PortfolioURL.TargetAttr>$PortfolioURL.Title</a>

@@ -1,5 +1,5 @@
 .typography .tiles-skills .title h1 {
-  font-weight: bold; }
+  font-weight: bold !important; }
 
 .typography .skill-title {
   font-size: 20px;
