@@ -1,5 +1,11 @@
-.typography .tiles-skills .title h1 {
-  font-weight: bold !important; }
+.typography .tiles-skills .title {
+  text-align: center; }
+  .typography .tiles-skills .title h1 {
+    font-weight: bold !important; }
+
+@media (min-width: 768px) {
+  .typography .tiles-skills .title {
+    text-align: left; } }
 
 .typography .skill-title {
   font-size: 20px;
@@ -11,10 +17,12 @@
   text-shadow: 1px 1px #000; }
 
 .skill-wrapper {
-  background-color: rgba(255, 255, 255, 0.7);
   padding: 10px;
   border-radius: 15px 0 15px 0;
-  animation: fadein 4s; }
+  animation: fadein 4s;
+  color: #eee;
+  background-color: inherit;
+  border: 1px solid #eee; }
   .skill-wrapper .skill-description {
     font-weight: 100; }
 
@@ -247,6 +255,39 @@ img {
 @media (min-width: 992px) {
   .login-form {
     width: 50%; } }
+
+.portfolio-page .portfolio-form #Form_SearchPortfolio_Name_Holder {
+  color: #fff; }
+
+.portfolio-page .portfolio-form #Form_SearchPortfolio_action_doSearchPortfolio {
+  background: inherit;
+  margin: 10px 0;
+  width: 100%; }
+
+.portfolio-page .portfolio-form .search-dropdown {
+  background: inherit;
+  color: #fff; }
+
+@media (min-width: 768px) {
+  .portfolio-page .portfolio-form #Form_SearchPortfolio_Name_Holder {
+    width: 70%; }
+  .portfolio-page .portfolio-form #Form_SearchPortfolio_action_doSearchPortfolio {
+    width: 147px;
+    margin: 0;
+    height: 43px; }
+  .portfolio-page .portfolio-form .btn-toolbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 42px;
+    width: 25%;
+    right: 30px;
+    margin-left: auto; } }
+
+@media (min-width: 992px) {
+  .portfolio-page .portfolio-form #Form_SearchPortfolio_action_doSearchPortfolio {
+    width: 240px; } }
 
 .portfolio-page .article-wrapper {
   padding: 50px;
