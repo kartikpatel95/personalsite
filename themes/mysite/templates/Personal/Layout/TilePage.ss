@@ -3,7 +3,8 @@
         <% include TitleContent %>
 
         <% if $Tiles %>
-            <div class="py-3">
+            <div class="py-3 h-100 d-flex align-items-center">
+            <div>
                 <div class="title">
                     <h1>Technical Skills</h1>
                 </div>
@@ -43,6 +44,7 @@
                         <% end_if %>
                     <% end_loop %>
                 </div>
+            </div>
             </div>
         <% end_if %>
     </div>
