@@ -27,7 +27,7 @@ namespace {
 
             Requirements::themedCSS('assets/css/frameworks/typography');
             Requirements::themedCSS('assets/css/frameworks/bootstrap.min');
-            Requirements::themedCSS('assets/css/frameworks/lightbox.min');
+            Requirements::themedCSS('assets/css/frameworks/lightbox');
             Requirements::themedCSS('assets/css/layout.min');
         }
     }
