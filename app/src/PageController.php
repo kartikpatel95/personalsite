@@ -16,6 +16,7 @@ namespace {
             Requirements::themedJavascript('assets/javascript/frameworks/jquery-3.3.1.min');
             Requirements::themedJavascript('assets/javascript/frameworks/bootstrap');
             Requirements::themedJavascript('assets/javascript/frameworks/lightbox.min');
+            Requirements::themedJavascript('assets/javascript/script');
             Requirements::javascript('https://unpkg.com/swiper/js/swiper.min.js');
             Requirements::css('https://unpkg.com/swiper/css/swiper.min.css');
 

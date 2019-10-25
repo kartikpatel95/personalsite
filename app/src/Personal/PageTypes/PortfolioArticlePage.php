@@ -4,9 +4,11 @@ namespace Personal {
 
     use gorriecoe\Link\Models\Link;
     use gorriecoe\LinkField\LinkField;
+    use SilverStripe\Forms\DropdownField;
     use SilverStripe\Forms\GridField\GridField;
     use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
     use SilverStripe\Forms\ListboxField;
+    use SilverStripe\Forms\RequiredFields;
     use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 
     /**
@@ -21,7 +23,8 @@ namespace Personal {
         private static $can_be_root = false;
 
         private static $has_one = [
-            'PortfolioURL' => Link::class
+            'PortfolioURL' => Link::class,
+            'ProjectType' => ProjectType::class
         ];
 
         private static $has_many = [
@@ -29,7 +32,7 @@ namespace Personal {
         ];
 
         private static $many_many = [
-            'Languages' => Language::class,
+            'Languages' => Language::class
         ];
 
         public function getCMSFields()
@@ -38,10 +41,19 @@ namespace Personal {
             $fields->addFieldToTab('Root.Main',
                 ListboxField::create('Languages', "Tools",
                     $this->getLanguageOptions()), 'Content');
+            $fields->addFieldToTab('Root.Main', DropdownField::create(
+               'ProjectTypeID', 'Project Type', ProjectType::get()->map('ID', 'Name')
+            )->setEmptyString('--Select--'), 'Content');
             $fields->addFieldToTab('Root.Main', LinkField::create('PortfolioURL', 'Portfolio URL', $this), 'Content');
             $fields->addFieldToTab('Root.PortfolioItems', $this->getPortfolioItemsGrid());
 
             return $fields;
+        }
+
+        public function getCMSValidator(){
+            return RequiredFields::create([
+                'ProjectTypeID'
+            ]);
         }
 
         /**

@@ -3,9 +3,11 @@
     <div class="container">
        <% include TitleContent %>
 
-        <% if $PageArticles %>
+        $SearchPortfolio
+
+        <% if $PortfolioResults %>
             <div class="row">
-                <% loop $PageArticles %>
+                <% loop $PortfolioResults.Results %>
                     <div class="col-lg-6 col-xl-4">
                         <a href="$Link">
                             <div class="article-wrapper">
@@ -16,20 +18,22 @@
                 <% end_loop %>
             </div>
 
-            <% if $PageArticles.MoreThanOnePage %>
+
+
+            <% if $PortfolioResults.Results.MoreThanOnePage %>
                 <nav>
                     <ul class="pagination justify-content-center flex-wrap">
-                    <li class="page-item left <% if not $PageArticles.NotFirstPage %>disabled"<% end_if %>">
-                        <a class="page-link" href="$BaseHref$PageArticles.PrevLink"> <i
+                    <li class="page-item left <% if not $PortfolioResults.Results.NotFirstPage %>disabled"<% end_if %>">
+                        <a class="page-link" href="$PortfolioResults.Results.PrevLink"> <i
                                 class="fa fa-chevron-circle-left"></i> Prev</a></li>
 
-                        <% loop $PageArticles.PaginationSummary %>
+                        <% loop $PortfolioResults.Results.PaginationSummary %>
                             <li class="page-item <% if $CurrentBool %>active<% end_if %>">
                                 <% if $CurrentBool %>
-                                    <a class="page-link" href="$BaseHref$Link">$PageNum</a>
+                                    <a class="page-link" href="$Link">$PageNum</a>
                                 <% else %>
                                     <% if $Link %>
-                                        <a class="page-link" href="$BaseHref$Link">$PageNum</a>
+                                        <a class="page-link" href="$Link">$PageNum</a>
                                     <% else %>
                                         <span class="ellipse"> ...</span>
                                     <% end_if %>
@@ -37,8 +41,8 @@
                             </li>
                         <% end_loop %>
 
-                            <li class="page-item right <% if not $PageArticles.NotLastPage %>disabled"<% end_if %>">
-                        <a class="page-link" href="$BaseHref$PageArticles.NextLink">Next <i
+                            <li class="page-item right <% if not $PortfolioResults.Results.NotLastPage %>disabled"<% end_if %>">
+                        <a class="page-link" href="$PortfolioResults.Results.NextLink">Next <i
                                 class="fa fa-chevron-circle-right"></i></a>
                         </li>
                     </ul>

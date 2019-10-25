@@ -256,38 +256,34 @@ img {
   .login-form {
     width: 50%; } }
 
-.portfolio-page .portfolio-form #Form_SearchPortfolio_Name_Holder {
-  color: #fff; }
-
-.portfolio-page .portfolio-form #Form_SearchPortfolio_action_doSearchPortfolio {
-  background: inherit;
-  margin: 10px 0;
+.portfolio-page .portfolio-form fieldset {
+  display: inline;
   width: 100%; }
-
-.portfolio-page .portfolio-form .search-dropdown {
-  background: inherit;
-  color: #fff; }
-
-@media (min-width: 768px) {
-  .portfolio-page .portfolio-form #Form_SearchPortfolio_Name_Holder {
-    width: 70%; }
-  .portfolio-page .portfolio-form #Form_SearchPortfolio_action_doSearchPortfolio {
-    width: 147px;
-    margin: 0;
-    height: 43px; }
-  .portfolio-page .portfolio-form .btn-toolbar {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    position: relative;
-    bottom: 42px;
-    width: 25%;
-    right: 30px;
-    margin-left: auto; } }
-
-@media (min-width: 992px) {
-  .portfolio-page .portfolio-form #Form_SearchPortfolio_action_doSearchPortfolio {
-    width: 240px; } }
+  .portfolio-page .portfolio-form fieldset .language-search-dropdown {
+    background: inherit;
+    margin: 10px 0;
+    width: 100%;
+    color: #fff; }
+  .portfolio-page .portfolio-form fieldset label {
+    color: #fff;
+    margin-bottom: 0; }
+  .portfolio-page .portfolio-form fieldset #Form_SearchPortfolio_language_Holder {
+    width: 100%;
+    display: inline-block; }
+  .portfolio-page .portfolio-form fieldset .project-type {
+    background: inherit;
+    margin: 10px 0;
+    width: 100%;
+    color: #fff;
+    height: calc(2.25rem + 2px); }
+  .portfolio-page .portfolio-form fieldset #Form_SearchPortfolio_project-type_Holder {
+    width: 100%;
+    display: inline-block; }
+  @media (min-width: 768px) {
+    .portfolio-page .portfolio-form fieldset #Form_SearchPortfolio_language_Holder {
+      width: 50%; }
+    .portfolio-page .portfolio-form fieldset #Form_SearchPortfolio_project-type_Holder {
+      width: 49%; } }
 
 .portfolio-page .article-wrapper {
   padding: 50px;

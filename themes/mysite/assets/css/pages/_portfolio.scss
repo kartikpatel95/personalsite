@@ -1,4 +1,50 @@
 .portfolio-page {
+  .portfolio-form {
+    fieldset{
+      display: inline;
+      width: 100%;
+      .language-search-dropdown {
+        background: inherit;
+        margin: 10px 0;
+        width: 100%;
+        color: #fff;
+      }
+
+      label {
+        color: #fff;
+        margin-bottom: 0;
+      }
+
+      #Form_SearchPortfolio_language_Holder {
+        width: 100%;
+        display: inline-block;
+      }
+
+      .project-type {
+        background: inherit;
+        margin: 10px 0;
+        width: 100%;
+        color: #fff;
+        height: calc(2.25rem + 2px);
+      }
+
+      #Form_SearchPortfolio_project-type_Holder{
+        width: 100%;
+        display: inline-block;
+      }
+
+      @media (min-width: 768px) {
+        #Form_SearchPortfolio_language_Holder {
+          width: 50%;
+        }
+        #Form_SearchPortfolio_project-type_Holder{
+          width: 49%;
+        }
+      }
+    }
+  }
+
+
   .article-wrapper {
     padding: 50px;
     background: rgba(22, 20, 20, 0.7);

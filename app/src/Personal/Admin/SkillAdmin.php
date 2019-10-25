@@ -12,10 +12,11 @@ namespace Personal {
     class SkillAdmin extends ModelAdmin
     {
         private static $managed_models = [
-            Language::class
+            Language::class,
+            ProjectType::class
         ];
         private static $url_segment = 'skills';
-        private static $menu_title = 'Languages';
+        private static $menu_title = 'Admin';
         private static $menu_icon_class = 'font-icon-code';
     }
 }
