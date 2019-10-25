@@ -45,10 +45,7 @@ namespace Personal {
                 ->addExtraClass('project-type')
             );
 
-            $actions = FieldList::create(
-                FormAction::create('doSearchPortfolio', 'Search')
-                ->addExtraClass('portfolio-action')
-            );
+            $actions = FieldList::create();
 
             $form = Form::create($this, __FUNCTION__, $fields, $actions);
 
