@@ -263,7 +263,7 @@ img {
     background: inherit;
     margin: 10px 0;
     width: 100%;
-    color: #fff; }
+    color: inherit; }
   .portfolio-page .portfolio-form fieldset label {
     color: #fff;
     margin-bottom: 0; }
@@ -274,7 +274,7 @@ img {
     background: inherit;
     margin: 10px 0;
     width: 100%;
-    color: #fff;
+    color: inherit;
     height: calc(2.25rem + 2px); }
   .portfolio-page .portfolio-form fieldset #Form_SearchPortfolio_project-type_Holder {
     width: 100%;
