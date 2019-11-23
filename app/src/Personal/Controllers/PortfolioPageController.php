@@ -6,7 +6,6 @@ namespace Personal {
     use SilverStripe\Forms\DropdownField;
     use SilverStripe\Forms\FieldList;
     use SilverStripe\Forms\Form;
-    use SilverStripe\Forms\FormAction;
     use SilverStripe\ORM\PaginatedList;
     use SilverStripe\View\ArrayData;
 

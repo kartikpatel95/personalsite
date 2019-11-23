@@ -7,7 +7,7 @@
         background: inherit;
         margin: 10px 0;
         width: 100%;
-        color: inherit;
+        color: rgb(255,0,0);
       }
 
       label {
@@ -51,7 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 10px inset;
+    border: 5px inset;
     margin-bottom: 15px;
     animation: fadeIn 5s;
   }

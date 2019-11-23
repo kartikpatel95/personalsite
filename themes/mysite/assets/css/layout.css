@@ -263,7 +263,7 @@ img {
     background: inherit;
     margin: 10px 0;
     width: 100%;
-    color: inherit; }
+    color: red; }
   .portfolio-page .portfolio-form fieldset label {
     color: #fff;
     margin-bottom: 0; }
@@ -291,7 +291,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 10px inset;
+  border: 5px inset;
   margin-bottom: 15px;
   animation: fadeIn 5s; }
 
