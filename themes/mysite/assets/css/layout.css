@@ -274,7 +274,7 @@ img {
     background: inherit;
     margin: 10px 0;
     width: 100%;
-    color: inherit;
+    color: red;
     height: calc(2.25rem + 2px); }
   .portfolio-page .portfolio-form fieldset #Form_SearchPortfolio_project-type_Holder {
     width: 100%;
