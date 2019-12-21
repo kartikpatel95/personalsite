@@ -1,4 +1,4 @@
-var timeline = document.getElementsByClassName('timeline-content');
+var timeline = document.getElementsByClassName('content');
 
 if(timeline[0]) timeline[0].className += " loaded";
 
