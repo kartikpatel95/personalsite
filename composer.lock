@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b5e9c1ddeb2fc95915f408103e79e3d",
+    "content-hash": "691fd7bdb3996bbf664faa685c53c5f5",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -3018,6 +3018,54 @@
             "time": "2019-08-20T13:31:17+00:00"
         },
         {
+            "name": "tractorcow/silverstripe-robots",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tractorcow/silverstripe-robots.git",
+                "reference": "9c29225b3a4a948060e51c0770baa01ede965340"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tractorcow/silverstripe-robots/zipball/9c29225b3a4a948060e51c0770baa01ede965340",
+                "reference": "9c29225b3a4a948060e51c0770baa01ede965340",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4"
+            },
+            "suggest": {
+                "silverstripe/googlesitemaps": "Ensures that a valid sitemap.xml is generated and referenced within robots.txt"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TractorCow\\Robots\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Damian Mooyman",
+                    "email": "damian.mooyman@gmail.com"
+                }
+            ],
+            "description": "Simple robots generation module for Silverstripe",
+            "keywords": [
+                "robots",
+                "silverstripe"
+            ],
+            "time": "2019-07-16T02:01:14+00:00"
+        },
+        {
             "name": "unclecheese/display-logic",
             "version": "2.0.2",
             "source": {
@@ -3175,6 +3223,65 @@
                 "graphql"
             ],
             "time": "2018-09-02T14:59:54+00:00"
+        },
+        {
+            "name": "wilr/silverstripe-googlesitemaps",
+            "version": "2.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wilr/silverstripe-googlesitemaps.git",
+                "reference": "473b88ee056288b4cd21f39991687c2ddf1e7210"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wilr/silverstripe-googlesitemaps/zipball/473b88ee056288b4cd21f39991687c2ddf1e7210",
+                "reference": "473b88ee056288b4cd21f39991687c2ddf1e7210",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4"
+            },
+            "replace": {
+                "silverstripe/googlesitemaps": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                },
+                "expose": [
+                    "images",
+                    "css"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Wilr\\GoogleSitemaps\\": "src/",
+                    "Wilr\\GoogleSitemaps\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Will Rossiter",
+                    "email": "will@fullscreen.io"
+                }
+            ],
+            "description": "SilverStripe support for the Google Sitemaps XML, enabling Google and other search engines to see all urls on your site. This helps your SilverStripe website rank well in search engines, and to encourage the information on your site to be discovered quickly.",
+            "homepage": "https://github.com/wilr/silverstripe-googlesitemaps",
+            "keywords": [
+                "googlesitemaps",
+                "seo",
+                "silverstripe"
+            ],
+            "time": "2019-05-13T00:09:59+00:00"
         }
     ],
     "packages-dev": [
