@@ -139,6 +139,7 @@ img {
 .timeline-wrapper {
   min-width: 300px;
   max-width: 800px;
+  padding: 0 15px;
   margin: 30px auto; }
   .timeline-wrapper .content {
     font-size: 1em;
@@ -171,13 +172,13 @@ img {
     padding-left: 0; }
     .timeline-wrapper .content:nth-child(odd):before {
       left: 100%;
-      margin-left: -15px; }
+      margin-left: -30px; }
   .timeline-wrapper .content:nth-child(even) {
     border-left: 3px solid;
     padding-right: 0; }
     .timeline-wrapper .content:nth-child(even):before {
       right: 100%;
-      margin-right: -15px; }
+      margin-right: -30px; }
   .timeline-wrapper .content:first-child {
     border-top: 0;
     border-top-right-radius: 0;
@@ -185,6 +186,12 @@ img {
   .timeline-wrapper .content:last-child {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
+
+@media (min-width: 992px) {
+  .timeline-wrapper .content:nth-child(odd):before {
+    margin-left: -15px; }
+  .timeline-wrapper .content:nth-child(even):before {
+    margin-right: -15px; } }
 
 .time-description {
   font-size: 13px;
