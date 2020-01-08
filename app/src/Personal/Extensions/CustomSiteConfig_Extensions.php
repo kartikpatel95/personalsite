@@ -5,7 +5,6 @@
  * Date: 2019-09-01
  * Time: 18:21
  */
-
 namespace Personal {
 
     use SilverStripe\AssetAdmin\Forms\UploadField;
@@ -24,30 +23,17 @@ namespace Personal {
     /**
      * Class CustomSiteConfig_Extensions
      * @package Personal
-     * @property string $Position
-     * @property string $PhoneNumber
-     * @property string $Email
-     * @property string $Address
-     * @property Date $DateOfBirth
      */
     class CustomSiteConfig_Extensions extends DataExtension {
-        private static $db = [
-            "Position" => 'Varchar(128)',
-            'PhoneNumber' => 'Varchar(64)',
-            'Email' => 'Varchar(256)',
-            'Address' => 'Text',
-            'DateOfBirth' => 'Date'
-        ];
+        private static $db = [];
 
         private static $has_one = [
-            'Profile' => Image::class,
             'CV' => File::class,
             'SiteLogo' => File::class,
             'SiteBackground' => Image::class
         ];
 
         private static $owns = [
-            'Profile',
             'CV',
             'SiteLogo',
             'SiteBackground'
@@ -64,20 +50,7 @@ namespace Personal {
 
             $fields->addFieldToTab('Root.Main',
                 $background = UploadField::create('SiteBackground'));
-            ImageHelpers::setImageDetails($background, 'Backgrounds');
-
-
-            $fields->addFieldsToTab('Root.Main', [
-                TextField::create('Position', 'Work Position'),
-                TextField::create('PhoneNumber', 'Phone Number'),
-                EmailField::create('Email', 'Email Address'),
-                TextareaField::create('Address', 'Physical Address'),
-                DateField::create('DateOfBirth', 'Date of Birth')
-            ]);
-
-            $fields->addFieldToTab('Root.Main', $profile = UploadField::create('Profile'));
-            $profile->setFolderName('ProfileImage');
-            $profile->getValidator()->setAllowedExtensions(['png', 'jpeg', 'jpg', 'gif']);
+                ImageHelpers::setImageDetails($background, 'Backgrounds');
 
             $fields->addFieldToTab('Root.Main', $cv = UploadField::create('CV'));
             $cv->setFolderName('Documents');

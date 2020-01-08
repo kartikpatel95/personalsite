@@ -1,35 +1,21 @@
 <div class="homepage-wrapper">
     <div class="container h-100 d-flex align-items-center justify-content-center">
         <div class="row w-100">
-            <div class="col-lg-12 col-xl-6 my-3 my-xl-0 px-0">
-                <div class="personal-statement py-4">
-                    <% if $SiteConfig.Profile %>
-                        <div class="d-flex justify-content-center">
-                            <img src="$SiteConfig.Profile.Link" class="profile" alt="$SiteConfig.Profile.Title">
-                        </div>
-                    <% end_if %>
-                    <% if $Content %>
-                        <div class="pt-2">
-                            $Content
-                        </div>
-                    <% end_if %>
-                </div>
-            </div>
-            <div class="col-lg-12 col-xl-6  home-user-details mb-3 mb-lg-0">
-                <% include HomeDetails %>
-            </div>
-
-            <% with $SiteConfig %>
-                <% if $Social %>
-                    <div class="col-md-12 social-icons mb-4 mb-md-0">
-                        <% loop $Social %>
-                            <% if $Icon %>
-                                <a href="$Social.LinkURL" {$Social.TargetAttr} class="mr-3"><i class="$Icon"></i></a>
-                            <% end_if %>
-                        <% end_loop %>
+            <div class="personal-statement py-4 w-100">
+                <% if $Content %>
+                    <div class="pt-2">
+                        $Content
                     </div>
                 <% end_if %>
-            <% end_with %>
+            </div>
+
+            <% loop $Menu(1) %>
+                <div class="col-md-6 col-lg-4 mb-4 tile-wrapper">
+                    <a href="$Link">
+                        <div class="tiles">$MenuTitle</div>
+                    </a>
+                </div>
+            <% end_loop %>
 
         </div>
     </div>
