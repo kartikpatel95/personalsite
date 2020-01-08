@@ -23,7 +23,9 @@
 	</div>
 </div>
 <footer>
-	<% include Footer %>
+	 <% if $RenderNonHome %>
+		<% include Footer %>
+	 <% end_if %>
 </footer>
 </body>
 </html>

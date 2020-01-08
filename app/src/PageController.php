@@ -2,8 +2,10 @@
 
 namespace {
 
+    use Personal\HomePageController;
     use SilverStripe\CMS\Controllers\ContentController;
     use SilverStripe\View\Requirements;
+    use SilverStripe\Control\Controller;
 
     class PageController extends ContentController
     {
@@ -24,12 +26,24 @@ namespace {
             Requirements::themedJavascript('assets/javascript/swiper');
 
             Requirements::css('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+            Requirements::css('https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,700,800&display=swap');
             Requirements::css("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
 
             Requirements::themedCSS('assets/css/frameworks/typography');
             Requirements::themedCSS('assets/css/frameworks/bootstrap.min');
             Requirements::themedCSS('assets/css/frameworks/lightbox');
             Requirements::themedCSS('assets/css/layout.min');
+        }
+
+
+        /**
+         * @return bool
+         */
+        public function getRenderNonHome(){
+            if(Controller::curr() != HomePageController::class){
+                return true;
+            }
+            return false;
         }
     }
 }
