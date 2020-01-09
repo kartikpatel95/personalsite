@@ -82,7 +82,6 @@ img {
   .homepage-wrapper .tile-wrapper {
     animation: slideInRight 5s; }
   .homepage-wrapper .personal-statement {
-    padding: 20px;
     height: 100%;
     animation: slideInLeft 5s; }
     .homepage-wrapper .personal-statement .content {

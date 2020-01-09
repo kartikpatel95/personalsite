@@ -3,7 +3,7 @@
 /* These are the default styles for the Simple theme */
 body {
     font-size: 16px; /* This overrides the browsers default font size */
-    line-height: 25px; /* If you change the font-size make sure you change the line-height value as well - the usual ratio is around 1.5 (font-size x 1.5 = line-height) */
+    /*line-height: 25px; !* If you change the font-size make sure you change the line-height value as well - the usual ratio is around 1.5 (font-size x 1.5 = line-height) *!*/
     margin-bottom: 20px;
     color: #333333;
     font-family: "Raleway", sans-serif;
@@ -37,7 +37,7 @@ body a {
 
 .typography h1 {
     font-size: 36px;
-    line-height: 45px;
+    /*line-height: 45px;*/
     margin: 0 0 25px 0;
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 5px;
@@ -45,31 +45,31 @@ body a {
 
 .typography h2 {
     font-size: 28px;
-    line-height: 35px;
+    /*line-height: 35px;*/
     margin-bottom: 15px;
 }
 
 .typography h3 {
     font-size: 22px;
-    line-height: 30px;
+    /*line-height: 30px;*/
     margin-bottom: 10px;
 }
 
 .typography h4 {
     font-size: 18px;
-    line-height: 25px;
+    /*line-height: 25px;*/
     margin-bottom: 5px;
 }
 
 .typography h5 {
     font-size: 16px;
-    line-height: 20px;
+    /*line-height: 20px;*/
     margin-bottom: 5px;
 }
 
 .typography h6 {
     font-size: 14px;
-    line-height: 20px;
+    /*line-height: 20px;*/
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -78,7 +78,7 @@ body a {
 /* PARAGRAGHS */
 .typography p {
     font-size: 15px;
-    line-height: 20px;
+    /*line-height: 20px;*/
     margin: 0 0 20px;
     font-family: "Raleway"
 }
