@@ -3,19 +3,23 @@
         <div class="row w-100">
             <div class="personal-statement py-4 w-100">
                 <% if $Content %>
-                    <div class="pt-2">
+                    <div class="pt-2 content">
                         $Content
                     </div>
                 <% end_if %>
             </div>
 
-            <% loop $Menu(1) %>
-                <div class="col-md-6 col-lg-4 mb-4 tile-wrapper">
-                    <a href="$Link">
-                        <div class="tiles">$MenuTitle</div>
-                    </a>
-                </div>
-            <% end_loop %>
+            <div class="link-wrapper">
+                <% loop $Menu(1) %>
+                    <% if $Link != '/' %>
+                        <div class="col-md-6 col-lg-4 mb-4 tile-wrapper">
+                            <a href="$Link">
+                                <div class="tiles">$MenuTitle</div>
+                            </a>
+                        </div>
+                    <% end_if %>
+                <% end_loop %>
+            </div>
         </div>
     </div>
 

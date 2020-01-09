@@ -25,28 +25,38 @@ img {
   flex-direction: column;
   max-height: 100%;
 
-  a{
-    .tiles {
-      padding: 20px;
-      background: rgba(0,0,0,0.4);
-      border-radius: 10px;
-      margin-right: 10px;
-      height: 100px;
-      text-align: center;
-      border: 1px solid #d01145;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-    }
-    .tiles:hover{
-      background: rgba(0,0,0,1);
-    }
-  }
 
-  a:hover{
+  .link-wrapper {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      .tiles {
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        margin-right: 10px;
+        height: 100px;
+        text-align: center;
+        border: 1px solid #d01145;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+      }
+
+      .tiles:hover {
+        background: rgba(0, 0, 0, 1);
+      }
+    }
+
+    a:hover {
       text-decoration: none;
+    }
   }
 
   .tile-wrapper {
@@ -59,8 +69,14 @@ img {
     height: 100%;
     animation: slideInLeft 5s;
 
-    .profile {
-      width: 190px;
+    .content {
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .content {
+        text-align: unset;
+      }
     }
   }
 
@@ -146,7 +162,7 @@ img {
       display: block;
       width: auto;
       border-top-right-radius: 0;
-      
+
       div {
         display: block;
       }
