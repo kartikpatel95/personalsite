@@ -21,12 +21,14 @@
 
     <% with $SiteConfig %>
         <% if $Social %>
-            <div class="social-icons">
-                <% loop $Social %>
-                    <div>
-                        <a href="$Social.LinkURL" $TargetAttr><i class="$Icon"></i></a>
-                    </div>
-                <% end_loop %>
+            <div class="d-flex justify-content-center d-md-block">
+                <div class="social-icons">
+                    <% loop $Social %>
+                        <div>
+                            <a href="$Social.LinkURL" $TargetAttr><i class="$Icon"></i></a>
+                        </div>
+                    <% end_loop %>
+                </div>
             </div>
         <% end_if %>
     <% end_with %>
