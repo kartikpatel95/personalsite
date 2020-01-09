@@ -211,20 +211,31 @@ img {
   .timeline-wrapper .content:last-child {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
+  .timeline-wrapper .time-description {
+    font-size: 13px;
+    font-style: italic; }
+  .timeline-wrapper .time-heading {
+    font-weight: 700;
+    padding-bottom: 5px;
+    font-size: 24px;
+    color: #d01145; }
+  .timeline-wrapper .time-sub-heading {
+    font-weight: 700;
+    font-size: 18px; }
+  .timeline-wrapper .time-date {
+    font-size: 13px;
+    font-style: italic;
+    position: absolute;
+    right: 27px;
+    top: 44px;
+    color: #d01145;
+    font-weight: 700; }
 
 @media (min-width: 992px) {
   .timeline-wrapper .content:nth-child(odd):before {
     margin-left: -15px; }
   .timeline-wrapper .content:nth-child(even):before {
     margin-right: -15px; } }
-
-.time-description {
-  font-size: 13px;
-  font-style: italic; }
-
-.time-heading {
-  font-weight: 700;
-  padding-bottom: 5px; }
 
 .background-wrapper {
   height: 100%;

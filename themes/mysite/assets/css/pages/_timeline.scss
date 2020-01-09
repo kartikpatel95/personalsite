@@ -79,6 +79,34 @@ $white: #ffffff;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
+
+
+  .time-description {
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  .time-heading {
+    font-weight: 700;
+    padding-bottom: 5px;
+    font-size: 24px;
+    color: #d01145;
+  }
+
+  .time-sub-heading {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .time-date {
+    font-size: 13px;
+    font-style: italic;
+    position: absolute;
+    right: 27px;
+    top: 44px;
+    color: #d01145;
+    font-weight: 700;
+  }
 }
 
 @media (min-width: 992px) {
@@ -95,14 +123,4 @@ $white: #ffffff;
       }
     }
   }
-}
-
-.time-description {
-  font-size: 13px;
-  font-style: italic;
-}
-
-.time-heading {
-  font-weight: 700;
-  padding-bottom: 5px;
 }
