@@ -273,7 +273,8 @@ img {
     margin: 10px 0;
     width: 100%;
     color: red;
-    height: calc(2.25rem + 2px); }
+    height: calc(2.25rem + 2px);
+    border-color: #fff; }
   .portfolio-page .portfolio-form fieldset #Form_SearchPortfolio_project-type_Holder {
     width: 100%;
     display: inline-block; }
