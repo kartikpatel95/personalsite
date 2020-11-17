@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9cc28a1a0b092b794f4515c6f58ce2e2",
+    "content-hash": "b6fe9640b6fbbb5377ac9d0b47a22e06",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -663,6 +663,54 @@
                 "watermark"
             ],
             "time": "2019-06-24T14:06:31+00:00"
+        },
+        {
+            "name": "kartikpatel95/silverstripe-slack-alert",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartikpatel95/silverstripe-slack-alert.git",
+                "reference": "ac4af980e82afb9adc4827ef7716d696038b9eb9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartikpatel95/silverstripe-slack-alert/zipball/ac4af980e82afb9adc4827ef7716d696038b9eb9",
+                "reference": "ac4af980e82afb9adc4827ef7716d696038b9eb9",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.0",
+                "silverstripe/siteconfig": "^4.4",
+                "silverstripe/vendor-plugin": "^1.0",
+                "tractorcow/silverstripe-colorpicker": "^4.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "resources-dir": "_resources",
+                "expose": [
+                    "client/dist"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Alert\\": "src/Alert"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Patel",
+                    "email": "kartik@gurudigital.nz"
+                }
+            ],
+            "description": "sticky alert",
+            "support": {
+                "source": "https://github.com/kartikpatel95/silverstripe-slack-alert/tree/1.0.1",
+                "issues": "https://github.com/kartikpatel95/silverstripe-slack-alert/issues"
+            },
+            "time": "2020-11-17T21:07:38+00:00"
         },
         {
             "name": "league/csv",
@@ -3018,6 +3066,54 @@
             "time": "2019-08-20T13:31:17+00:00"
         },
         {
+            "name": "tractorcow/silverstripe-colorpicker",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tractorcow/silverstripe-colorpicker.git",
+                "reference": "69daa25c8ef7cf3b557e6563a3f60e8ad6d793cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tractorcow/silverstripe-colorpicker/zipball/69daa25c8ef7cf3b557e6563a3f60e8ad6d793cf",
+                "reference": "69daa25c8ef7cf3b557e6563a3f60e8ad6d793cf",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^4.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                },
+                "expose": [
+                    "client"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "TractorCow\\Colorpicker\\": "src/",
+                    "TractorCow\\Colorpicker\\Tests\\": "tests/php/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Damian Mooyman",
+                    "email": "damian.mooyman@gmail.com"
+                }
+            ],
+            "description": "Color picker field for Silverstripe CMS using the ColorPicker jQuery plugin",
+            "keywords": [
+                "color",
+                "colorpicker",
+                "colour",
+                "silverstripe"
+            ],
+            "time": "2019-10-17T02:18:35+00:00"
+        },
+        {
             "name": "tractorcow/silverstripe-robots",
             "version": "4.0.1",
             "source": {
@@ -5352,5 +5448,6 @@
     "platform": {
         "php": ">=7.0.0"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
